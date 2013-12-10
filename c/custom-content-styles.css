@@ -505,15 +505,21 @@ figure{
 }
 
 .data-table > tbody > tr > td {
-	border-bottom: 1px solid #DCDCDC;}
+	border-bottom: 1px solid #DCDCDC;
+	vertical-align: top;
+	padding-top: 1em;}
 	
 .data-table > thead > tr > th {
 	vertical-align: bottom;
-	border-bottom: 2px solid #dddddd;}
+	border-bottom: 2px solid #dddddd;
+	text-align: left;}
 
 .data-table > tfoot {
   	border-bottom: 2px solid #dddddd;
 	background: #D3D3D3;}
+	
+.details-column{
+	width: 60%;}
 
 .resident{
 	/*  background-color:#DAA520;*/
