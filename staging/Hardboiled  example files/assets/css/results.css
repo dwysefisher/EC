@@ -1,0 +1,262 @@
+/*
+
+Hardboiled Web Design
+http://hardboiledwebdesign.com
+http://twitter.com/itshardboiled
+
+RESULTS.CSS 
+
+*/
+
+/* BODY ------------------------------------------------------------------ */
+
+body { 
+position : relative;
+padding : 300px 40px 20px 40px;
+background : rgb(83,36,5) url(../img/wood.jpg) repeat;
+font : 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+color : rgb(0,0,0); 
+text-shadow : 0 1px 1px rgb(255,255,255); }
+
+@font-face {
+font-family : 'AllerRegular';
+src : url('../type/aller_rg-webfont.eot');
+src : local('☺'), url('../type/aller_rg-webfont.woff') format('woff'), url('../type/aller_rg-webfont.ttf') format('truetype'), url('../type/aller_rg-webfont.svg#webfontooYDBZYS') format('svg');
+font-weight : normal;
+font-style : normal; }
+
+@font-face {
+font-family : 'AllerBold';
+src : url('../type/aller_bd-webfont.eot');
+src : local('☺'), url('../type/aller_bd-webfont.woff') format('woff'), url('../type/aller_bd-webfont.ttf') format('truetype'), url('../type/aller_bd-webfont.svg#webfont4YvdCymj') format('svg');
+font-weight : normal;
+font-style : normal; }
+
+@font-face {
+font-family : 'AdlerRegular';
+src : url('../type/adler.eot');
+src : local('Adler Regular'), local('Adler'), url('../type/adler.ttf') format('truetype'); }
+
+.group:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+clear : both; 
+visibility : hidden; 
+overflow : hidden; }
+
+
+/* HEADINGS -------------------------------------------------------------- */
+
+hgroup {
+position : absolute; 
+z-index : 1000;
+top : 4em;
+left : 50%;
+margin : 0 0 0 -172px;
+width : 345px;
+height : 165px; 
+background : transparent url(../img/hgroup.png) no-repeat 50% 50%;
+text-indent: -9999px; }
+
+hgroup a {
+display : block; 
+width : 345px;
+height : 165px; }
+
+h1, h2, h3 {
+font-weight : normal; }
+
+h1 { 
+margin-bottom : .25em; 
+text-rendering : optimizeLegibility; }
+
+h2 {
+margin-bottom : .75em; 
+font-size : 1.12em; /* 18 / 16 = 1.125 */ 
+line-height : 1.1; }
+
+h3, h4 {
+font-size : 1em; /* 16 / 16 = 1 */ 
+margin-bottom : .75em; }
+
+/* TYPOGRAPHY ----------------------------------------------------------- */
+
+p {
+margin-bottom : 1.5em;
+font-size : .87em; /* 14 / 16 = 1 */ }
+
+ul {
+list-style-type : none;
+margin-bottom : 1.5em;
+font-size : .87em; /* 14 / 16 = 1 */ }
+
+/* LINKS ------------------------------------------------------------------ */
+
+a, a:visited {
+outline : none;
+color : rgb(143,58,58);
+text-decoration : none; }
+ 
+a:hover { 
+color : rgb(143,58,58); 
+text-decoration : none; }
+ 
+a:active, a:focus { 
+position : relative; 
+top : 1px; 
+color : rgb(143,58,58); }
+
+/* LAYOUT -------------------------------------------------------------- */
+
+.content {
+position : relative;
+width : 900px;
+margin : 0 auto;
+padding : 260px 0 40px;
+background-image : url(../img/results.jpg);
+background-repeat : no-repeat;
+background-position : 0 0; }
+
+/* contentinfo */
+
+footer[role="contentinfo"] {
+position : relative;
+width : 520px;
+min-width : 520px;
+max-width : 520px;
+margin : 0 auto;
+padding : 3em 0 1.5em; 
+color : rgb(255,255,255); 
+text-shadow : 0 1px 1px rgb(0,0,0);
+text-align : center; }
+
+footer[role="contentinfo"] h3 {
+display : block;
+overflow : hidden;
+width : 225px;
+height : 90px;
+margin : 0 auto 1.5em;
+background-color : transparent;
+background : url(../img/contentinfo-h3.png) no-repeat 0 0;
+text-indent : -9999px; }
+
+footer[role="contentinfo"] a {
+color : rgb(255,255,255); 
+text-decoration : underline; }
+
+section:after,
+footer[role="contentinfo"]:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+clear : both; 
+visibility : hidden; 
+overflow : hidden; }
+
+
+/* VENDOR SPECIFIC --------------------------------------------------------- */
+
+::-webkit-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::-moz-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+
+/* PAGE STYLES */
+
+.hentry {
+margin : 0 80px 1.5em; }
+
+.hentry .entry-content {
+float : left; 
+width : 480px; 
+margin-right : 20px; }
+
+.hentry .entry-content p {
+margin : 0; }
+
+.hentry footer {
+position : relative;
+top : -1.8em;
+float : right; 
+display : block; 
+width : 200px; }
+
+.hentry footer ul {
+list-style-type : none; 
+margin : 0; }
+
+.hentry footer time {
+display : none; }
+
+
+/* MODERNIZR ------------------------------------------------------------------- */
+
+/* csstransitions */
+
+.csstransitions .content {
+-moz-transition-property : -moz-transform;
+-moz-transition-duration : .5s;
+-moz-transition-timing-function : ease-in-out;
+-o-transition-property : -o-transform;
+-o-transition-duration : .5s;
+-o-timing-function : ease-in-out; 
+-webkit-transition-property : -webkit-transform;
+-webkit-transition-duration : .5s;
+-webkit-timing-function : ease-in-out; 
+transition-property : transform;
+transition-duration : 1s;
+transition-timing-function : ease-in-out; }
+
+/* csstransforms */
+
+.csstransforms .content:hover {
+-moz-transform : rotate(1deg) translateY(-20px);
+-o-transform : rotate(1deg) translateY(-20px);
+-webkit-transform : rotate(1deg) translateY(-20px);
+transform : rotate(1deg) translateY(-20px); } 
+
+/* fontface */
+
+.fontface body {
+font-family : AllerRegular; }
+
+.fontface h1, 
+.fontface h2 {
+font-family : AllerBold; }
+
+.fontface h1 {
+font-family : AdlerRegular; 
+font-size : 1.2em; 
+text-transform : uppercase;
+color : rgb(84,79,73); }
+
+/* multiplebgs */
+
+.multiplebgs body { 
+background-image : url(../img/body.png), url(../img/wood.jpg); 
+background-repeat : no-repeat, repeat;
+background-position : 40px 0, 0 0; }
+
+.multiplebgs .content:hover {
+background-image : url(../img/results.png), url(../img/results.jpg);
+background-repeat : no-repeat, no-repeat;
+background-position : 100% 0, 0 0; }
+
+/* rgba */
+
+.rgba .content {
+-moz-box-shadow : 2px 5px 40px rgba(0,0,0,.8); 
+-webkit-box-shadow : 2px 5px 40px rgba(0,0,0,.8); 
+box-shadow : 2px 5px 40px rgba(0,0,0,.8); }

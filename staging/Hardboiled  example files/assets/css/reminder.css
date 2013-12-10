@@ -1,0 +1,122 @@
+/*
+
+Hardboiled Web Design
+http://hardboiledwebdesign.com
+http://twitter.com/itshardboiled
+
+REMINDER.CSS 
+
+*/
+
+/* BODY ------------------------------------------------------------------ */
+
+body { 
+position : relative;
+overflow : hidden;
+min-height : 1000px;
+padding : 0 20px;
+background : rgb(55,27,3) url(../img/door.jpg) no-repeat 50% 0;
+font : 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+color : rgb(0,0,0); }
+
+/* TYPOGRAPHY ----------------------------------------------------------- */
+
+p {
+margin-bottom : 1.5em;
+font-size : .87em; /* 14 / 16 = 1 */ }
+
+ul {
+margin-bottom : 1.5em;
+font-size : .87em; /* 14 / 16 = 1 */ }
+
+li {
+list-style-type : none;
+margin-bottom : .5em; }
+
+/* LINKS ------------------------------------------------------------------ */
+
+a, a:visited {
+outline : none;
+color : rgb(143,58,58);
+text-decoration : none; }
+ 
+a:hover { 
+color : rgb(143,58,58); 
+text-decoration : none; }
+ 
+a:active, a:focus { 
+position : relative; 
+top : 1px; 
+color : rgb(143,58,58); }
+
+/* LAYOUT -------------------------------------------------------------- */
+
+article  { 
+position : absolute; 
+left : 50%;  
+top : 50%; 
+width : 240px; 
+height : 240px;  
+margin-top : -120px; 
+margin-left : -120px;  
+padding : 20px; 
+background-color : rgb(233,227,211); 
+background-image : url(../img/paper.jpg); }
+
+article p {
+margin-bottom : .5em; }
+
+article:after {
+content : url(../img/pin.png); 
+position : absolute; 
+top : 0; 
+right : 0; }
+
+/* VENDOR SPECIFIC --------------------------------------------------------- */
+
+::-webkit-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::-moz-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+
+/* MODERNIZR ------------------------------------------------------------------- */
+
+/* border-image */
+
+.borderimage article {
+margin-top : -200px; 
+margin-left : -170px; 
+background-color : transparent;
+background-image : none;
+-moz-border-image : url(../img/note.png) 20 40 30 40 stretch;
+-o-border-image : url(../img/note.png) 20 40 30 40 stretch;
+-webkit-border-image : url(../img/note.png) 20 40 30 40 stretch;
+border-image : url(../img/note.png) 20 40 30 40 stretch; 
+border-width : 20px 40px 30px 40px; }
+
+/* fontface */
+
+@font-face {
+font-family : 'JournalRegular';
+src : url('../type/journal.eot');
+src : local('Journal Regular'), local('Journal'), url('../type/journal.ttf') format('truetype'); }
+
+.fontface article {
+font-family : JournalRegular; 
+font-size : 2em; 
+line-height : 1; }
+
+.no-fontface article,
+.no-fontface aside {
+font-family : Helvetica, Arial, sans-serif; }

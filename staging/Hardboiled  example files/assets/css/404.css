@@ -1,0 +1,93 @@
+/*
+
+Hardboiled Web Design
+http://hardboiledwebdesign.com
+http://twitter.com/itshardboiled
+
+404.CSS 
+
+*/
+
+/* BODY ------------------------------------------------------------------ */
+
+body { 
+position : relative;
+padding : 0 0 60px 0;
+background : rgb(255,255,255) url(../img/mug.jpg) no-repeat 0 0; }
+
+@font-face {
+font-family : 'Boycott';
+src: url('../type/boycott.eot');
+src: local('Boycott'), local('Boycott'), url('../type/boycott.ttf') format('truetype'), url('../type/boycott.woff') format('woff'); }
+
+@font-face {
+font-family : 'ChunkFive';
+src: url('../type/ChunkFive.eot');
+src: local('ChunkFive'), local('ChunkFive'), url('../type/ChunkFive.ttf') format('truetype'), url('../type/chunkfive.woff') format('woff'); }
+
+.splatter {
+min-height : 900px;
+background : url(../img/blood.png) no-repeat 50% 0; }
+
+.content {
+width : 280px; 
+max-width : 280px;
+min-width : 280px;
+margin : 0 auto; 
+padding-top : 270px; 
+text-shadow : 0 1px 2px rgb(0,0,0); }
+
+.content h1 {
+margin : 0;
+font-size : 10em; 
+font-weight : bold;
+text-align : center;
+line-height : 1;
+color : rgb(224,224,224); 
+font-family : ChunkFive; 
+text-shadow : none;
+-webkit-text-fill-color : transparent; 
+-webkit-text-stroke : 3px rgb(133,29,25);  }
+
+.content p {
+color : rgb(224,224,224);
+font-family : Boycott; 
+font-size : 1em;
+text-align : center; 
+text-shadow : -1px -1px 2px rgb(0,0,0);  }
+
+.content h1 + p {
+margin : -30px 0 .5em 0;
+padding-bottom : .25em;
+border-bottom : 1px solid rgb(224,224,224);
+font-family : ChunkFive; 
+font-size : 1.6em;
+text-transform : uppercase; 
+letter-spacing : 3px; 
+text-shadow : -1px -1px 2px rgb(0,0,0); }
+
+/* .no-fontface */ 
+
+.no-fontface .content h1,
+.no-fontface .content p,
+.no-fontface .content h1 + p {
+font-family : Helvetica, Arial, sans-serif; 
+font-weight : bold;	} 
+
+.no-fontface .content p {
+line-height : 1.3;
+font-size: 16px; }
+
+.no-fontface .content h1 + p {
+margin : -10px 0 .5em 0;
+padding-bottom : .5em; }
+
+.no-fontface .content h1 + p + p {
+padding : 0 30px; }
+
+/* multiplebgs */
+
+.multiplebgs body { 
+background-image : url(../img/body.png), url(../img/mug.jpg); 
+background-repeat : no-repeat, repeat;
+background-position : 40px 0, 0 0; }

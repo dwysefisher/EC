@@ -1,0 +1,234 @@
+/*
+
+Hardboiled Web Design
+http://hardboiledwebdesign.com
+http://twitter.com/itshardboiled
+
+ABOUT.CSS 
+
+*/
+
+/* BODY ------------------------------------------------------------------ */
+
+body { 
+position : relative;
+overflow : hidden;
+min-height : 1000px;
+padding : 300px 0 20px;
+background-color : rgb(255,255,255);
+font : 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+color : rgb(0,0,0); }
+
+/* TYPOGRAPHY ----------------------------------------------------------- */
+
+p {
+margin-bottom : 1.5em;
+font-size : .87em; /* 14 / 16 = 1 */ }
+
+ul {
+margin-bottom : 1.5em;
+font-size : .87em; /* 14 / 16 = 1 */ }
+
+li {
+list-style-type : none;
+margin-bottom : .5em; }
+
+/* LINKS ------------------------------------------------------------------ */
+
+a, a:visited {
+outline : none;
+color : rgb(143,58,58);
+text-decoration : none; }
+ 
+a:hover { 
+color : rgb(143,58,58); 
+text-decoration : none; }
+ 
+a:active, a:focus { 
+position : relative; 
+top : 1px; 
+color : rgb(143,58,58); }
+
+/* LAYOUT -------------------------------------------------------------- */
+
+article,
+aside  { 
+position : absolute; 
+top : 300px; 
+left : 50%; 
+width : 260px; 
+height : 260px; 
+margin-left : -60px;  
+padding : 40px; 
+background-color : rgb(255,250,150); }
+
+article { 
+z-index : 2; 
+left : 40%; }
+
+article:after {
+content : url(../img/pin.png); 
+position : absolute; 
+top : 0; 
+right : 0; }
+
+aside { 
+z-index : 1; }
+
+aside:active { 
+z-index : 3; }
+
+/* cssanimations */
+
+.shadow {
+z-index : 3;
+position : absolute;
+top : 0;
+right : -100%;
+width : 880px;
+height : 1000px;
+background-image : url(../img/shadow.png);
+background-repeat : no-repeat;
+background-position : 0 0; }
+
+/* VENDOR SPECIFIC --------------------------------------------------------- */
+
+::-webkit-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::-moz-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+
+/* MODERNIZR ------------------------------------------------------------------- */
+
+/* cssanimations */
+
+.cssanimations .shadow {
+-webkit-animation-name : shadow;
+-webkit-animation-iteration-count : 10;
+-webkit-animation-timing-function : linear; 
+-webkit-animation-duration : 20s;
+-webkit-animation-delay : 5s; }
+
+@-webkit-keyframes shadow {
+0%{ right : -100%; }
+100% { right : 100%; }
+}
+
+.no-cssanimations .shadow {
+right : 50%;
+margin-right : -440px; }
+
+/* cssgradients */
+
+.cssgradients article,
+.cssgradients aside {
+background-image : -moz-linear-gradient(right top, rgb(255,210,105), rgb(255,250,150)); 
+background-image : -webkit-gradient(linear, right top, left bottom, from(rgb(255,210,105)), to(rgb(255,250,150))); } 
+
+/* csstransitions */
+
+.csstransitions a { 
+-webkit-transition : color .2s linear;
+-moz-transition : color .2s linear;
+-o-transition : color .2s linear;
+transition : color .2s linear; }
+/* No alternative required */
+
+/* csstransforms */
+
+.csstransforms article {
+top : 260px; 
+-moz-transform : skew(10deg, -15deg);
+-o-transform : skew(10deg, -15deg);
+-webkit-transform : skew(10deg, -15deg);
+transform : skew(10deg, -15deg); 
+-webkit-border-bottom-right-radius : 60px 15px;
+-moz-border-radius-bottomright : 60px 15px;
+border-bottom-right-radius : 60px 15px; }
+/* Alternative in above declaration */
+
+.csstransforms article:after {
+z-index : 4; 
+top : -20px; 
+right : -20px; }
+/* Alternative in above declaration */
+
+.no-csstransforms article {
+top : 260px; }
+/* Alternative in above declaration */
+
+.no-csstransforms aside {
+top : 300px; 
+margin-left : -360px; }
+/* Alternative in above declaration */
+
+/* fontface */
+
+@font-face {
+font-family : 'JournalRegular';
+src : url('../type/journal.eot');
+src : local('Journal Regular'), local('Journal'), url('../type/journal.ttf') format('truetype'); }
+
+.fontface article,
+.fontface aside {
+font-family : JournalRegular; 
+font-size : 2em; 
+line-height : 1; }
+
+.no-fontface article,
+.no-fontface aside {
+font-family : Helvetica, Arial, sans-serif; }
+
+/* multiplebgs */
+
+.multiplebgs body {
+background-color : rgb(55,27,3);
+background-image : -moz-radial-gradient(center 45deg, circle farthest-side, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 150%), url(../img/door.jpg); 
+background-image : -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(rgba(0,0,0,0)), to(rgba(0,0,0,.5))), url(../img/door.jpg); 
+background-position : 50% 50%, 50% 0; 
+background-repeat : no-repeat; } 
+/* Alternative in above declaration */
+
+/* rgba */
+
+.rgba article,
+.rgba aside  {
+text-shadow : 0 -1px 1px rgba(255,255,255,.8); } 
+/* No alternative required */
+
+.rgba article  {
+-moz-box-shadow : 0 2px 20px rgba(0,0,0,.5); 
+-webkit-box-shadow : 0 2px 20px rgba(0,0,0,.5); 
+box-shadow : 0 2px 20px rgba(0,0,0,.5); } 
+
+.rgba aside  {
+-moz-box-shadow : 0 2px 10px rgba(0,0,0,.5); 
+-webkit-box-shadow : 0 2px 10px rgba(0,0,0,.5); 
+box-shadow : 0 2px 10px rgba(0,0,0,.5); } 
+
+.no-rgba article,
+.no-rgba aside {
+border : 1px solid #ccc;
+border-right : 1px solid rgb(0,0,0);
+border-bottom : 2px solid rgb(0,0,0); }
+
+
+
+/* multiplebgs */
+
+.multiplebgs body { 
+background-image : url(../img/body.png), -moz-radial-gradient(center 45deg, circle farthest-side, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 150%), url(../img/door.jpg); 
+background-image : url(../img/body.png), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(rgba(0,0,0,0)), to(rgba(0,0,0,.5))), url(../img/door.jpg); 
+background-position : 40px 0, 50% 50%, 50% 0; 
+background-repeat : no-repeat, no-repeat, repeat-y; } 

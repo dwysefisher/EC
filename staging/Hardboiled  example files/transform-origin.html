@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+
+<!--
+Hardboiled Web Design
+http://hardboiledwebdesign.com
+http://twitter.com/itshardboiled
+-->
+
+<title>Hardboiled Web Design by Andy Clarke</title>
+
+<meta charset=utf-8>
+
+<!--[if !IE 6]><!-->
+<link rel="stylesheet" href="assets/css/reset.css" media="screen, projection">
+<link rel="stylesheet" href="assets/css/technical.css" media="screen, projection">
+<link rel="stylesheet" href="assets/css/print.css" media="print">
+<!--<![endif]-->
+
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen, projection">
+<![endif]-->
+
+<script src="assets/js/jquery-1.4.2.min.js"></script>
+<script src="assets/js/modernizr-1.5.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="assets/js/DOMAssistant-2.0.min.js"></script>
+<script src="assets/js/selectivizr.js"></script>
+<![endif]-->
+
+<style>
+
+.content {
+margin : 0 auto 1.5em auto;
+width : 360px; }
+
+.content div {
+-webkit-box-reflect : 
+below 1px
+-webkit-gradient(linear, left bottom, left top, 
+from(rgba(255,255,255,.5)),
+color-stop(0.5, transparent), 
+to(transparent)); }
+
+#example-01 {
+width : 320px;
+height : 215px; 
+margin-bottom : 40px;
+padding : 10px;
+background : transparent url(assets/img/c02.jpg) no-repeat 0 0;
+border : 10px solid rgb(100,97,113); 
+background-size : 100% 100%; 
+-moz-border-radius : 40px;
+-webkit-border-radius : 40px;
+border-radius : 40px;
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.5); 
+-moz-transform : rotate(30deg);
+-o-transform : rotate(30deg);
+-webkit-transform : rotate(30deg);
+transform : rotate(30deg); 
+-moz-transform-origin : 0 0;
+-o-transform-origin : 0 0;
+-webkit-transform-origin : 0 0;
+transform-origin : 0 0; }
+
+#example-02 {
+width : 320px;
+height : 215px; 
+margin-bottom : 40px;
+padding : 10px;
+background : transparent url(assets/img/c03.jpg) no-repeat 0 0;
+border : 10px solid rgb(100,97,113); 
+background-size : 100% 100%; 
+-moz-border-radius : 40px;
+-webkit-border-radius : 40px;
+border-radius : 40px;
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.5); 
+-moz-transform : rotate(30deg);
+-o-transform : rotate(30deg);
+-webkit-transform : rotate(30deg);
+transform : rotate(30deg); 
+-moz-transform-origin : 50% 0;
+-o-transform-origin : 50% 0;
+-webkit-transform-origin : 50% 0;
+transform-origin : 50% 0; }
+
+#example-03 {
+width : 320px;
+height : 215px; 
+margin-bottom : 40px;
+padding : 10px;
+background : transparent url(assets/img/c04.jpg) no-repeat 0 0;
+border : 10px solid rgb(100,97,113); 
+background-size : 100% 100%; 
+-moz-border-radius : 40px;
+-webkit-border-radius : 40px;
+border-radius : 40px;
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.5); 
+-moz-transform : rotate(30deg);
+-o-transform : rotate(30deg);
+-webkit-transform : rotate(30deg);
+transform : rotate(30deg); 
+-moz-transform-origin : 100% 0;
+-o-transform-origin : 100% 0;
+-webkit-transform-origin : 100% 0;
+transform-origin : 100% 0; }
+
+#example-04 {
+width : 320px;
+height : 215px; 
+margin-bottom : 40px;
+padding : 10px;
+background : transparent url(assets/img/c06.jpg) no-repeat 0 0;
+border : 10px solid rgb(100,97,113); 
+background-size : 100% 100%; 
+border-radius : 40px;
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.5); 
+-moz-transform : rotate(30deg);
+-o-transform : rotate(30deg);
+-webkit-transform : rotate(30deg);
+transform : rotate(30deg); 
+-moz-transform-origin : 50% 50%;
+-o-transform-origin : 50% 50%;
+-webkit-transform-origin : 50% 50%;
+transform-origin : 50% 50%; }
+
+#example-05 {
+width : 320px;
+height : 215px; 
+margin-bottom : 40px;
+padding : 10px;
+background : transparent url(assets/img/c07.jpg) no-repeat 0 0;
+border : 10px solid rgb(100,97,113); 
+background-size : 100% 100%; 
+-moz-border-radius : 40px;
+-webkit-border-radius : 40px;
+border-radius : 40px;
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.5); 
+-moz-transform : rotate(30deg);
+-o-transform : rotate(30deg);
+-webkit-transform : rotate(30deg);
+transform : rotate(30deg); 
+-moz-transform-origin : 100% 50%;
+-o-transform-origin : 100% 50%;
+-webkit-transform-origin : 100% 50%;
+transform-origin : 100% 50%; }
+
+#example-06 {
+width : 320px;
+height : 215px; 
+margin-bottom : 40px;
+padding : 10px;
+background : transparent url(assets/img/c08.jpg) no-repeat 50% 0;
+border : 10px solid rgb(100,97,113); 
+background-size : 120% 100%; 
+-moz-border-radius : 40px;
+-webkit-border-radius : 40px;
+border-radius : 40px;
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.5); 
+-moz-transform : rotate(30deg);
+-o-transform : rotate(30deg);
+-webkit-transform : rotate(30deg);
+transform : rotate(30deg); 
+-moz-transform-origin : 100% 100%;
+-o-transform-origin : 100% 100%;
+-webkit-transform-origin : 100% 100%;
+transform-origin : 100% 100%; }
+
+</style>
+
+</head>
+
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+<header role="banner">
+<hgroup>
+<h1><a href="http://hardboiledwebdesign.com">Hardboiled Web Design</a></h1>
+<h2>by Andy Clarke</h2>
+</hgroup>
+</header>
+
+<div class="content group">
+
+<div id="example-01"></div>
+<div id="example-02"></div>
+<div id="example-03"></div>
+<div id="example-04"></div>
+<div id="example-05"></div>
+<div id="example-06"></div>
+
+</div>
+
+<footer role="contentinfo">
+<h3>It&#8217;s Hardboiled</h3>
+<p>&#169; <a href="http://stuffandnonsense.co.uk/" rel="me">Andy Clarke</a> 2010. <br>
+HTML and CSS licensed with <a href="http://creativecommons.org/licenses/by/2.5/" rel="license">Creative Commons Attribution 2.5</a>.</p>
+<p>Have something on your mind or just want to say hello, <a href="mailto:dropadime@hardboiledwebdesign.com">drop me a dime</a></p>
+
+<ul>
+<li>Design: <a href="http://twitter.com/malarkey" rel="me">Andy Clarke</a>. Illustrations: <a href="http://twitter.com/hellogeri" rel="friend met">Geri Coady</a></li>
+<li>Magazine and book covers &#169; of their original owners</li>
+<li>Hosting by <a href="http://vps.net">VPS.NET</a></li>
+</ul>
+</footer>
+
+</body>
+</html>

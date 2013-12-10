@@ -1,0 +1,266 @@
+/*
+
+Hardboiled Web Design
+http://hardboiledwebdesign.com
+http://twitter.com/itshardboiled
+
+AUTHORS.CSS 
+
+*/
+
+/* BODY ------------------------------------------------------------------ */
+
+body { 
+position : relative;
+padding : 100px 40px 200px 40px;
+background : rgb(24,24,24) url(../img/authors.jpg) no-repeat 50% 100%; 
+font : 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+color : rgb(255,255,255); 
+text-shadow : 0 1px 1px rgb(0,0,0); }
+
+.group:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+clear : both; 
+visibility : hidden; 
+overflow : hidden; }
+
+h1 {
+visibility : hidden; }
+
+/* LAYOUT -------------------------------------------------------------- */
+
+section {
+position : relative;
+width : 940px;
+height : 760px;
+margin : 0 auto 3em auto; }
+
+/* contentinfo */
+
+footer[role="contentinfo"] {
+display : none; }
+
+section:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+clear : both; 
+visibility : hidden; 
+overflow : hidden; }
+
+
+/* VENDOR SPECIFIC --------------------------------------------------------- */
+
+::-webkit-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::-moz-selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+::selection {
+color : rgb(255,255,255);
+background-color : rgb(27,34,38); 
+text-shadow : none; }
+
+/* PAGE STYLES */
+
+.vcard {
+z-index : 1;
+position : absolute;
+width : 300px; 
+height : 195px;
+background-repeat : no-repeat;
+background-position : 50% 50%; 
+-webkit-background-size : 100% 100%;
+-moz-background-size : 100% 100%; 
+-o-background-size : 100% 100%; 
+background-size : 100% 100%; }
+
+.vcard:nth-of-type(1) {
+top : 100px;
+left : 0; 
+background : url(../img/c01.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(2) {
+top : 80px;
+left : 320px; 
+background : url(../img/c02.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(3) {
+top : 100px;
+left : 640px; 
+background : url(../img/c03.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(4) {
+top : 320px;
+left : 40px; 
+background : url(../img/c04.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(5) {
+z-index : 2;
+top : 270px;
+left : 570px; 
+background : url(../img/c05.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(6) {
+top : 320px;
+left : 600px; 
+background : url(../img/c06.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(7) {
+top : 540px;
+left : 0; 
+background : url(../img/c07.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(8) {
+top : 560px;
+left : 320px; 
+background : url(../img/c08.jpg) no-repeat 50% 50%; }
+
+.vcard:nth-of-type(9) {
+top : 540px;
+left : 640px; 
+background : url(../img/c09.jpg) no-repeat 50% 50%; }
+
+.vcard * {
+text-indent : -9999px; }
+
+/* MODERNIZR ------------------------------------------------------------------- */
+
+/* multiplebgs */
+
+.multiplebgs body { 
+background-image : url(../img/body.png), url(../img/authors.jpg); 
+background-repeat : no-repeat;
+background-position : 40px 0, 50% 100%; }
+
+/* RGBA */
+
+.rgba .vcard {
+-moz-box-shadow : 0 2px 1px rgba(0,0,0,.8), 0 2px 10px rgba(0,0,0,.5);
+-webkit-box-shadow : 0 2px 1px rgba(0,0,0,.8), 0 2px 10px rgba(0,0,0,.5);
+box-shadow : 0 2px 1px rgba(0,0,0,.8), 0 2px 10px rgba(0,0,0,.5); }
+
+.rgba .vcard:hover {
+-moz-box-shadow : 0 2px 5px rgba(0,0,0,.9), 0 20px 30px rgba(0,0,0,.6);
+-webkit-box-shadow : 0 2px 5px rgba(0,0,0,.9), 0 20px 30px rgba(0,0,0,.6);
+box-shadow : 0 2px 5px rgba(0,0,0,.9), 0 20px 30px rgba(0,0,0,.6); } 
+
+.no-rgba .vcard { 
+border-right : 1px solid rgb(0,0,0);
+border-bottom : 2px solid rgb(0,0,0); }
+
+.no-rgba .vcard:hover { 
+border-right : 2px solid rgb(0,0,0);
+border-bottom : 4px solid rgb(0,0,0); } 
+
+/* csstransforms */
+
+.csstransforms .vcard:nth-child(odd) {
+-moz-transform : rotate(-2deg); 
+-moz-transform-origin : 0 100%;
+-o-transform : rotate(-2deg); 
+-o-transform-origin : 0 100%;
+-webkit-transform : rotate(-2deg); 
+-webkit-transform-origin : 0 100%;
+transform : rotate(-2deg);
+transform-origin : 0 100%; }
+
+.csstransforms .vcard:nth-child(3n) {
+-moz-transform : rotate(2deg) translateY(-30px);
+-o-transform : rotate(2deg) translateY(-30px);
+-webkit-transform : rotate(2deg) translateY(-30px);
+transform : rotate(2deg) translateY(-30px); }
+
+.csstransforms .vcard:nth-child(4n) {
+-moz-transform : rotate(2deg); 
+-moz-transform-origin : 0 100%;
+-o-transform : rotate(2deg); 
+-o-transform-origin : 0 100%;
+-webkit-transform : rotate(2deg); 
+-webkit-transform-origin : 0 100%;
+transform : rotate(2deg);
+transform-origin : 0 100%; }
+
+.csstransforms .vcard:nth-child(6n) {
+-moz-transform : rotate(-5deg); 
+-o-transform : rotate(-5deg); 
+-webkit-transform : rotate(-5deg); 
+transform : rotate(-5deg);
+-moz-transform-origin : 0 0;
+-o-transform-origin : 0 0;
+-webkit-transform-origin : 0 0;
+transform-origin : 0 0; } 
+
+.csstransforms .vcard:nth-child(5n) {
+-moz-transform : rotate(90deg); 
+-o-transform : rotate(90deg);
+-webkit-transform : rotate(90deg); 
+transform : rotate(90deg); 
+-moz-transform-origin : 0 0;
+-o-transform-origin : 0 0;
+-webkit-transform-origin : 0 0;
+transform-origin : 0 0; }  
+
+/* csstransitions */
+
+.csstransitions .vcard {
+-moz-transition-property : all;
+-moz-transition-duration : .4s;
+-moz-transition-timing-function : ease-in-out;
+-o-transition-property : all;
+-o-transition-duration : .4s;
+-o-transition-timing-function : ease-in-out;
+-webkit-transition-property : all;
+-webkit-transition-duration : .4s;
+-webkit-timing-function : ease-in-out; 
+transition-property : all;
+transition-duration : .4s;
+transition-timing-function : ease-in-out; }
+
+.csstransitions .vcard:hover {
+-moz-transform : rotate(0deg) scale(1.05); 
+-moz-transform-origin : 50% 50%;
+-o-transform : rotate(0deg) scale(1.05); 
+-o-transform-origin : 50% 50%;
+-webkit-transform : rotate(0deg) scale(1.05); 
+-webkit-transform-origin : 50% 50%;
+transform : rotate(2deg);
+transform-origin : rotate(0deg) scale(1.05);
+z-index : 3;
+cursor : pointer; }
+
+.csstransitions .vcard:nth-child(5n):hover {
+-moz-transform : rotate(92deg) scale(1.05); 
+-moz-transform-origin : 0 0;
+-o-transform : rotate(92deg) scale(1.05);
+-o-transform-origin : 0 0;
+-webkit-transform : rotate(92deg) scale(1.05); 
+-webkit-transform-origin : 0 0;
+transform : rotate(92deg) scale(1.05);
+transform-origin : 0 0; } 
+
+/* IE fixes */
+
+.no-csstransforms .vcard:nth-of-type(4) {
+top : 320px;
+left : -20px; }
+
+.no-csstransforms .vcard:nth-of-type(5) {
+z-index : 2;
+top : 300px;
+left : 320px; }
+
+.no-csstransforms .vcard:nth-of-type(6) {
+top : 320px;
+left : 640px; }
+
+.no-csstransforms .vcard:nth-of-type(8) {
+top : 520px; } 
+
