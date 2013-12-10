@@ -1,0 +1,28 @@
+/*==================ZEBRA TABLE LAYOUT=================*/
+
+#hor-zebra {
+	font-family: "Open Sans", Sans-Serif;
+	font-size: 1em;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#hor-zebra th {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px 8px;
+	color: #990033;
+}
+#hor-zebra td {
+	padding: 0.5em;
+	color: #565656;
+  	vertical-align: top;
+}
+#hor-zebra .odd {
+	background: #D3D3D3; 
+}
+#hor-zebra tbody tr:hover td {
+	color: #808080;
+}
+
+/*==============END ZEBRA TABLE LAYOUT======================*/

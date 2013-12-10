@@ -1,0 +1,368 @@
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+	html{
+		}
+	
+	body{
+		background-color: #cc9900;
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	.g-outer-wrap{
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.g-inner-wrap {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1600px;
+	}
+	
+	.g figure{
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.cap-bot:hover figcaption {
+	  opacity: 1;
+	}
+
+	.cap-bot:before { bottom: 10px; left: 10px; }
+	.cap-bot figcaption { 
+		left: 0; 
+		bottom: -30%;
+		padding: 2.5%;
+		background: #f5f5f5;
+		vertical-align: middle;
+		text-align: left;
+		width: 100%;
+		position: absolute;
+		background: rgba(20,20,20,0.75);
+		color: white;
+		font-size: 0.75em;
+		letter-spacing: 0.05em;
+		opacity:0;
+		-webkit-transition: all 0.6s ease;
+		-moz-transition:    all 0.6s ease;
+		-o-transition:      all 0.6s ease;
+		}
+		
+	.cap-bot:hover figcaption { bottom: 0; }
+	
+	figure:before { 
+		content: "i"; 
+		position: absolute; 
+		background: rgba(255,255,255,0.75); 
+		color: black;
+		width: 24px;
+		height: 24px;
+		-webkit-border-radius: 12px;
+		-moz-border-radius:    12px;
+		border-radius:         12px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 24px;
+		/* Only Fx 4 supporting transitions on psuedo elements so far... */
+		-webkit-transition: all 0.6s ease;
+		-moz-transition: all 0.6s ease;
+		-o-transition: all 0.6s ease;
+		opacity: 0.75;	
+		}
+	
+	figure:hover:before {
+		opacity: 0;
+	}
+	
+	.g {
+		padding: 0.25em;
+		overflow: hidden;
+	}
+	.g li {
+/*		float: left;*/
+		width: 100%;
+		padding: 0.25em;
+	}
+	.g img {
+/*		display: block;*/
+		max-width: 100%;
+	}
+	
+		
+/*======================================================================
+
+2-UP
+
+======================================================================*/
+
+@media only screen and (min-width: 31em) {
+	.g li{
+		width: 45%;
+		padding: 0 2.5%;
+		float: left;
+	}
+	
+	.g li:nth-of-type(odd){
+		clear: left;	
+	}
+	
+	.name{
+		font-size: 3em;
+	}
+	
+	.job-title{
+		font-size: 1.5em;
+	}
+}
+
+
+/*======================================================================
+
+3-UP
+
+======================================================================*/
+
+@media screen and (min-width: 40em) {
+		.g li {
+	    	width: 28%;
+	    	padding:1%;
+	  	}
+	  	.g li:nth-child(2n+1) {
+	  		clear: left;
+	  	}
+	  	.g li:nth-child(2n+1) {
+			clear: none;
+		}
+	}
+
+
+/*======================================================================
+
+5-UP
+
+======================================================================*/
+
+@media screen and (min-width: 72em) {
+	.g li {
+    	width: 20%;
+    	padding: 0; 
+  	}
+  	.g li:nth-child(3n+1) {
+  		clear: left;
+  	}
+  	.g li:nth-child(3n+1) {
+		clear: none;
+	}
+}
+
+</style>
+		
+</head>
+
+<body>
+
+<header class="page-header">
+    <h1 class="name">2013 Phonathon</h1>
+</header>
+<!--Pattern HTML-->
+  <div class="g-outer-wrap">
+	  <div class="g-inner-wrap">
+	  	<ul class="g">
+				<li>
+					<figure class="cap-bot cap-left"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_kgschwend.jpg" alt="Kelly Gschwend" title="Kelly Gschwend" /><figcaption><b>Kelly Gschwend</b><br />
+					<i>Phonathon Coordinator</i>
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot cap-left"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_ajudd.jpg" alt="Aimee Judd" title="Aimee Judd" /><figcaption><b>Aimee Judd</b>, Junior<br />
+					<i>Major:</i> English<br />
+					<i>Hometown:</i> Lacon, IL<br />
+					<i>Career Aspirations:</i> I want a career in higher education, in Student Affairs<br />
+					<i>Interesting Fact:</i> I played ice hockey for 9 years
+					</figcaption></figure>
+				</li>
+					
+				<li>
+					<figure class="cap-bot cap-left"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_01.jpg" alt="" title="" /><figcaption><b>Caller name</b>, class year<br />
+					<i>Major:</i><br />
+					<i>Hometown:</i> <br />
+					<i>Career Aspirations:</i> <br />
+					<!--<i>Interesting Fact:</i>-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot cap-left"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_blishka.jpg" alt="Blake Lishka" title="Blake Lishka" /><figcaption><b>Blake Lishka</b>, Freshman<br />
+					<i>Major:</i> Physical Education<br />
+					<i>Hometown:</i> Bloomington, IL<br />
+					<i>Career Aspirations:</i> I want to be a P.E. teacher and a coach<br />
+					<!--<i>Interesting Fact:</i> I can do an impression of the Ginger Bread Man from Shre--></figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_bweed.jpg" alt="Brandon Weed" title="Brandon Weed" /><figcaption><b>Brandon Weed</b>, Freshman<br />
+					<i>Major:</i> Biology<br />
+					<i>Hometown:</i> Deer Creek, IL<br />
+					<i>Career Aspirations:</i> I want to be a doctor for the Navy.<br />
+					<!--<i>Interesting Fact:</i> I am 6'9"-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_cbruess.jpg" alt="Charles Bruess" title="Charles Bruess" /><figcaption><b>Charles Bruess</b>, Senior<br />
+					<i>Major:</i> Criminal Justice<br />
+					<i>Hometown:</i> Metamora, IL<br />
+					<i>Career Aspirations:</i> Active Duty in the Army<br />
+<!--					<i>Interesting Fact:</i> I started Eureka's Rugby team-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_cmartinez.jpg" alt="Ceci Martinez" title="Ceci Martinez" /><figcaption><b>Ceci Martinez</b>, Freshman<br />
+					<i>Major:</i> Business Administration<br />
+					<i>Hometown:</i> Kewanee, IL<br />
+					<i>Career Aspirations:</i> I want to work hard to become a CEO<br />
+<!--					<i>Interesting Fact:</i> I can speak Spanish-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_ddaniel.jpg" alt="Darien Daniel" title="Darien Daniel" /><figcaption><b>Darien Daniel</b>, Sophomore<br />
+					<i>Major:</i> Accounting and Business Administration<br />
+					<i>Hometown:</i> Marion, IL<br />
+					<i>Career Aspirations:</i> Starting my own accounting firm<br />
+<!--					<i>Interesting Fact:</i> I enjoy working out</figcaption></figure>-->
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_dwilson.jpg" alt="Daiquarion Wilson" title="Daiquarion Wilson"/><figcaption><b>Daiquarion Wilson</b>, Freshman <br />
+					<i>Major:</i> Business Administration<br />
+					<i>Hometown:</i> Springfield, IL<br />
+					<i>Career Aspirations:</i> Starting my own business<br />
+<!--					<i>Interesting Fact:</i> Everyone thinks I play basketball but I don't!-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_ebuck.jpg" alt="Erin Buck" title="Erin Buck" /><figcaption><b>Erin Buck</b>, Freshman<br />
+					<i>Major:</i> English-Creative Writing<br />
+					<i>Hometown:</i> Riverton, IL<br />
+					<i>Career Aspirations:</i> I would like to be a writer or a publisher<br />
+<!--					<i>Interesting Fact:</i> I am a published author-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_egunawan.jpg" alt="Eva Gunawan" title="Eva Gunawan" /><figcaption><b>Eva Gunawan</b>, Sophomore<br />
+					<i>Major:</i> Biology and Chemistry (double major)<br />
+					<i>Hometown:</i> Neponset, IL<br />
+					<i>Career Aspirations:</i> I want to attend John's Hopkins and become a reconstructive surgeon<br />
+<!--					<i>Interesting Fact:</i> I can play the piano, guitar, saxophone, and urheen-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_eutley.jpg" alt="Erica Utley" title="Erica Utley" /><figcaption><b>Erica Utley</b>, Senior<br />
+					<i>Major:</i> Art<br />
+					<i>Hometown:</i> Byron, IL<br />
+					<i>Career Aspirations:</i> I want to work in a photography studio<br />
+<!--					<i>Interesting Fact:</i> I did an internship at Disney World last spring-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_jmoore.jpg" alt="Joshua Moore" title="Joshua Moore" /><figcaption><b>Joshua Moore</b>, Senior<br />
+					<i>Major:</i> English<br />
+					<i>Hometown:</i> Goodloftsville, TN<br />
+					<i>Career Aspirations:</i> Medicine and Poetry<br />
+<!--					<i>Interesting Fact:</i> I swim butterfly-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+				<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_kbanks.jpg" alt="Kierra Banks" title="Kierra Banks" /><figcaption><b>Kierra Banks</b>, Freshman<br />
+					<i>Major:</i> English &ndash; Writing<br />
+					<i>Hometown:</i> Chicago<br />
+					<i>Career Aspirations:</i> I want to pursue journalism<br />
+<!--					<i>Interesting Fact:</i> I play four different instruments-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_mharmon.jpg" alt="Mason Harmon" title="Mason Harmon" /><figcaption><b>Mason Harmon</b>, class year<br />
+					<i>Major:</i> Communication<br />
+					<i>Hometown:</i> Kankakee, IL<br />
+					<i>Career Aspirations:</i> I aspire to travel the world and raise money for colleges, universities and students in need.<br />
+<!--					<i>Interesting Fact:</i>-->
+					</figcaption></figure>
+				</li>
+				
+				<li><figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_mporter.jpg" alt="Michelle Porter" title="Michelle Porter" /><figcaption><b>Michelle Porter</b>, Freshman<br />
+					<i>Major:</i> Pre-law<br />
+					<i>Hometown:</i> Fox Lake, IL<br />
+					<i>Career Aspirations:</i> I want to be a lawyer<br />
+<!--					<i>Interesting Fact:</i> I'm an animal lover. I have 3 dogs and 3 cats-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_msimmons.jpg" alt="Mackenzie Simmons" title="Mackenzie Simmons" /><figcaption><b>Mackenzie Simmons</b>, Freshman<br />
+					<i>Major:</i> Undecided<br />
+					<i>Hometown:</i> Peoria, IL<br />
+					<i>Career Aspirations:</i> Finding something successful that I'm passionate about<br />
+<!--					<i>Interesting Fact:</i> I have state titles for softball-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_nbelless.jpg" alt="Natasha Belless" title="Natasha Belless" /><figcaption><b>Natasha Belless,</b> Freshman<br />
+					<i>Major:</i> Criminal Justice<br />
+					<i>Hometown:</i> Lewistown, IL<br />
+					<i>Career Aspirations:</i> I want to become a police officer<br />
+<!--					<i>Interesting Fact:</i> I went to cosmetology school-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_sdvorak.jpg" alt="Sarah Dvorak" title="Sarah Dvorak" /><figcaption><b>Sarah Dvorak</b>, Freshman<br />
+					<i>Major:</i> Communication with Business and Music Minor<br />
+					<i>Hometown:</i> Aurora, IL<br />
+					<i>Career Aspirations:</i> I'd like to be a festival liaison for Disney World<br />
+<!--					<i>Interesting Fact:</i> I have no sense of smell-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_svance.jpg" alt="Selena Vance" title="Selena Vance" /><figcaption><b>Selena Vance</b>, Junior<br />
+					<i>Major:</i> Art and Criminal Justice (double major)<br />
+					<i>Hometown:</i> Princeton, IL<br />
+					<i>Career Aspirations:</i> I want to own a gallery and become a juvenile probation officer<br />
+<!--					<i>Interesting Fact:</i> I'm named after Catwoman-->
+					</figcaption></figure>
+				</li>
+				
+				<li>
+					<figure class="cap-bot"><img src="http://www.eureka.edu/wp-content/uploads/2013/11/phonathon_2013_skeene.jpg" alt="Spencer Keene" title="Spencer Keene" /><figcaption><b>Spencer Keene</b>, Freshman<br />
+					<i>Major:</i> Undecided<br />
+					<i>Hometown:</i> Sandwich, IL<br />
+					<i>Career Aspirations:</i> I want to go to law school<br />
+<!--					<i>Interesting Fact:</i> I love to laugh and have a good time-->
+					</figcaption></figure>
+				</li>
+	
+			</ul>
+		</div>
+	<!--End Pattern HTML-->
+	</div>
+</body>
+</html>
