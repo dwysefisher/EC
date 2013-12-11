@@ -1,6 +1,13 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!--<link href="font-awesome-4.0.3/css/font-awesome.min.css" rel='stylesheet'>-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified CSS -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 <style type="text/css" media="screen">
 	body{
@@ -90,9 +97,61 @@ display : block; }
 -moz-box-shadow : 0 1px 10px rgba(0,0,0,.5);
 -webkit-box-shadow : 0 1px 10px rgba(0,0,0,.5);
 box-shadow : 0 1px 10px rgba(0,0,0,.5); }
+
+.gallery {
+	overflow: hidden;
+  	margin: 0 auto;}
+  	
+.gallery li {
+	float: left;
+	width: 50%;
+	padding: 0 2.5%;
+	list-style-type: none;}
+	
+.gallery img {
+	display: block;
+  	width: 380px;
+  	max-width: 100%;
+  	max-height: 100%;
+	margin-bottom: -0.5em;
+}
+
+.gallery-third li {
+	float: left;
+	width: 33%;
+	padding: 0 2.5%;
+	list-style-type: none;}	
+	
+.gallery-third img {
+	display: inline-block;
+  	max-width: 100%;
+  	max-height: 100%;
+	margin-bottom: -0.5em;
+}	
+	
+/*.gallery figcaption {
+	margin-top: -5em;
+}*/
+  	
+.gallery li:nth-child(odd) {
+	clear: left;
+	padding-right: 2.5%;}
+
+figcaption {
+	font-size: smaller;
+	line-height: 1.5em;
+	text-align: left;
+	color: #A9A9A9;
+  	padding: 0 0.5em;}
+
+figure{
+	max-width: 100%;
+	margin: 0;}
+
+
 </style>
 
-<div id="items" class="hlisting">
+<!--<div id="items" class="hlisting">
   <div class="item" id="f01">
     <a href="#f01"><img src="img/fiction-01.jpg" alt=""></a>
     <div class="description">
@@ -168,6 +227,52 @@ box-shadow : 0 1px 10px rgba(0,0,0,.5); }
 		<a href="#items"><img src="assets/img/a-close.png" alt="Close"></a>
 		</div>
 	</div>
+</div>-->
 
-  
-</div>
+
+
+
+
+
+<!--<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content --*>
+  </div><!-- /.modal-dialog --*>
+</div><!-- /.modal --*>-->
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+<figure><img src="http://www.eureka.edu/wp-content/uploads/2013/08/profile-erigsby.jpg" alt="Ellen Rigsby, Assistant Dean/Director of Financial Aid" class="size-full wp-image-5465 alignleft" data-toggle="modal;" /><figcaption><a href="mailto:eraid@eureka.edu">Ellen Rigsby</a> <br />Asst Dean/Dir of Financial Aid</figcaption></figure>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
