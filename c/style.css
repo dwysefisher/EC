@@ -606,6 +606,7 @@ span.amp {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
+  border-radius: 4px;
 }
 .alert-help {
   margin: 10px;
@@ -618,8 +619,12 @@ span.amp {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
-  border-color: #bfe4f4;
-  background: #d5edf8;
+/*  border-color: #bfe4f4;
+/*  background: #d5edf8;*!/*/
+  color: #cc9900;
+  background-color: #FFFFBF;
+  border-color: #cc9900;
+  max-width: 100% !important;
 }
 .alert-error {
   margin: 10px;
