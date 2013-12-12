@@ -161,106 +161,13 @@ display: none;
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-/*.btn:active,
-.btn.active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);*/
+.alert-event-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #a9a9a9;
+  background: #C0C0C0;
 }
-
-/*.alert {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.alert h4 {
-  margin-top: 0;
-  color: inherit;
-}
-
-.alert .alert-link {
-  font-weight: bold;
-}
-
-.alert > p,
-.alert > ul {
-  margin-bottom: 0;
-}
-
-.alert > p + p {
-  margin-top: 5px;
-}
-
-.alert-dismissable {
-  padding-right: 35px;
-}
-
-.alert-dismissable .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  color: inherit;
-}
-
-.alert-success {
-  color: #468847;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-}
-
-.alert-success hr {
-  border-top-color: #c9e2b3;
-}
-
-.alert-success .alert-link {
-  color: #356635;
-}
-
-.alert-info {
-  color: #cc9900;
-  background-color: #FFE64D !important;
-  border-color: #cc9900 !important;
-  max-width: 100%;
-}
-
-.alert-info hr {
-  border-top-color: #a6e1ec;
-}
-
-.alert-info .alert-link {
-  color: #990033;
-}
-
-.alert-warning {
-  color: #c09853;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-}
-
-.alert-warning hr {
-  border-top-color: #f7e1b5;
-}
-
-.alert-warning .alert-link {
-  color: #a47e3c;
-}
-
-.alert-danger {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #ebccd1;
-}
-
-.alert-danger hr {
-  border-top-color: #e4b9c0;
-}
-
-.alert-danger .alert-link {
-  color: #953b39;
-}*/
 
 /*================================================================================
 
@@ -313,6 +220,10 @@ display: none;
   	max-width: 100%;
   	max-height: 100%;
 	margin-bottom: -0.5em;
+}
+
+.gallery-third a{
+	margin: 0;
 }	
 	
 /*.gallery figcaption {
@@ -322,6 +233,10 @@ display: none;
 .gallery li:nth-child(odd) {
 	clear: left;
 	padding-right: 2.5%;}
+	
+.gallery-third li:nth-child(3n+1) {
+	clear: left;
+	padding-right: 2.5%;}	
 
 figcaption {
 	font-size: smaller;
@@ -329,6 +244,12 @@ figcaption {
 	text-align: left;
 	color: #A9A9A9;
   	padding: 0 0.5em;}
+  	
+.gallery-third figcaption {
+	font-size: 0.75em;
+	padding: 0 0 1.5em 0;
+	max-width: 95%;
+}
 
 figure{
 	max-width: 100%;
@@ -336,10 +257,6 @@ figure{
 
 /*.gallery li:nth-child(even) {
 	padding-left: 1.5em;
-}
-
-.clear-both{
-	clear: both;
 }
 
 .floatright {
@@ -424,73 +341,7 @@ figure{
 	.g img {
 /*		display: block;*/
 		max-width: 100%;}
-	
-/*	.cbp-rfgrid {
-		margin: 0 0 0 0;
-		padding: 0 2.5%;
-		list-style: none;
-		position: relative;
-		width: 95%;
-		vertical-align: middle;	}
-	
-	.cbp-rfgrid li {
-	    position: relative;
-/*	    float: left;*!/
-	    overflow: hidden;
-	    width: 100%; /* Fallback *!/
-	    width: -webkit-calc(100% / 1);
-	    width: calc(100% / 1);
-	    padding-bottom: 1em;}
-	
-	.cbp-rfgrid li a,
-	.cbp-rfgrid li a img {
-		display: block;
-		width: 100%;
-		cursor: pointer;}
-	
-	.cbp-rfgrid li a img {
-		max-width: 100%;}
-	
-	/* Flexbox is used for centering the heading *!/
-	.cbp-rfgrid li a div {
-		position: absolute;
-		padding: 2.5%;
-		left: 2em;
-		top: 2em;
-		right: 2em;
-		bottom: 2.5em;
-		background: rgba(192, 192, 192, .4);
-/*		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: flex;
-		-webkit-align-items: center;
-		-moz-align-items: center;
-		-ms-align-items: center;
-	    align-items: center;*!/
-	    opacity: 0;	}
-	
-	.cbp-rfgrid li a:hover div {
-		opacity: 1;
-	}
-	
-	.cbp-rfgrid li a div h3 {
-		width: 95%;
-		color: #fff;
-		text-transform: uppercase;
-		font-size: 1.4em;
-		letter-spacing: 2px;
-		padding: 0 10px;
-		margin-top: 1em;
-	    text-align: center;	}
-	
-	.cbp-rfgrid li a div p{
-		color: #fff;
-		font-size: 0.9em;
-		text-align: left;
-		padding: 2.5%;
-		line-height: 1.75em;}*/
-		
+			
 /*=============2-UP==============================*/
 
 @media only screen and (min-width: 31em) {
@@ -519,48 +370,63 @@ figure{
 		}
 	}
 
-
-/*@media screen and (min-width: 1190px) {
-	.cbp-rfgrid li {
-		width: 20%; /* Fallback *!/
-		width: -webkit-calc(100% / 5);
-		width: calc(100% / 5);
-		float: left;
-		padding: 2.5%;
-	}
-	
-	.cbp-rfgrid li a div {
-		bottom: 2em;
-	}
-	
-	.cbp-rfgrid li a:hover div {
-		opacity: 1;
-		margin: 1em;
-	}
-	.cbp-rfgrid li a div h3 {
-		width: 95%;
-		color: #fff;
-		text-transform: uppercase;
-		font-size: 1.25em;
-		letter-spacing: 2px;
-		padding: 0 10px;
-		margin-top: 1em;
-	    text-align: center;
-	}
-	
-	.cbp-rfgrid li a div p{
-		color: #fff;
-		font-size: 0.9em;
-		text-align: left;
-		padding: 2.5%;
-		line-height: 1.5em;	
-	}
-}*/
-
 /*================END GALLERY===============================*/
 
+/* ================================= BIO & PIC LAYOUT =================================== */
 
-//**================================END IMAGES AND MEDIA STYLING=============================**//
+	.caption {
+	  text-align:center;}
+	
+	.thumbnail {
+	  float:left;
+	  padding-right:1em;
+	  width: 32%;}
+	
+	.thumbnail li {
+		list-style: none;}
+	
+	.bio-text {
+	  font-family: sans-serif;
+	  line-height: 1.5em;}
+	
+	.row {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  width: 100%;
+	  position: relative;}
+	
+	.topic {
+	  float: right;
+	  width: 66%;
+	  list-style:none;
+	  padding-top: 0.25em;}
+	
+	.topic > h4 {
+	  padding-bottom: 0.1em;
+	  line-height:0.25em;
+	  }
+	
+	.topic p {
+	  font-size: 0.85em !important;
+	  line-height: 1.7em;
+	}
+	
+	.clearfix {
+	  zoom: 1;}
+	                  
+	.clearfix:after {
+	  content: " "; /* Older browser do not support empty content */
+	  visibility: hidden;
+	  display: block;
+	  height: 0;
+	  clear: both; }
+  
+/* ================================= END BIO & PIC LAYOUT =================================== */
+  
+
+
+//**================================END IMAGES AND MEDIA STYLING=============================**/
 
 
 
@@ -692,6 +558,16 @@ col.commuter {
         max-width:100%;
         margin-top: 1.5em;}
         
+    .gallery-third li {
+      display: inline;
+      max-width: 100%;
+      width:250px;
+      padding-bottom: 1em; }
+    
+    .gallery-third figcaption {
+      margin-left: -6px;
+      padding: 1em 0.5em;}    
+        
 	.g li:nth-child(3n+1) {
 		clear: left;}
 		
@@ -705,6 +581,17 @@ col.commuter {
     	display: none;
     	padding: 0.5em;
     	background-color: lime !important;}
+    	
+    .thumbnail, .topic {
+      float:none;
+      width: auto;
+      margin: 0 auto;}
+    
+    .topic > h4 {
+      font-size: 1.25em;
+      padding-bottom: 0.5em;
+      line-height:1em;
+      }	
 }
 
 //**==================================END MOBILE STYLING===================================**//

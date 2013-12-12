@@ -640,6 +640,14 @@ span.amp {
   border-color: #deeaae;
   background: #e6efc2;
 }
+
+.alert-event-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #a9a9a9;
+  background: #C0C0C0;
+}
 /*********************
 BORDER RADIUS
 *********************/
@@ -2149,9 +2157,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     -ms-filter: none !important;
   }
   a,
-  a:visited {
-    color: #444 !important;
+  a:visited,
+  a:link {
+    color: #520 !important;
     text-decoration: underline;
+    font-size: 10pt;
   }
   a:after,
   a:visited:after {
@@ -2204,5 +2214,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .header, .secondary-header-images, .footer{display: none;}
   #main{width: 100%;}
   #content{box-shadow: none; -moz-box-shadow: none;}
+  
+  p {
+  	font-size: 11pt;
+  	line-height: 13pt;
+  }
+  
+  h4 {
+  	font-size: 16pt;
+  	letter-spacing: normal;
+  }
+  
+  h3 {
+  	font-size: 21pt;
+  }
   
 }
