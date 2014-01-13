@@ -266,6 +266,34 @@ figure{
 	margin-right: 3em;
 }*/
 
+.gallery-fourth li {
+	float: left;
+	width: 25%;
+	padding: 0 2.5%;
+	list-style-type: none;}	
+	
+.gallery-fourth img {
+	display: inline-block;
+  	max-width: 100%;
+  	max-height: 100%;
+	margin-bottom: -0.5em;
+}
+
+.gallery-fourth a{
+	margin: 0;
+}	
+
+.gallery-fourth figcaption {
+	font-size: 0.75em;
+	padding: 0 0 1.5em 0;
+	max-width: 95%;
+}
+
+.gallery-fourth li:nth-child(4n+1) {
+	clear: left;
+	padding-right: 2.5%;}	
+
+
 /*===================================GALLERY=================================*/
 
 	.g-outer-wrap{
@@ -567,6 +595,23 @@ col.commuter {
     .gallery-third figcaption {
       margin-left: -6px;
       padding: 1em 0.5em;}    
+    
+    .gallery-fourth li {
+      display: inline;
+      max-width: 45%;
+      width:200px;
+      padding-bottom: 1em;
+      margin: 0 auto; }
+    
+    .gallery-fourth figcaption {
+      margin-left: -6px;
+      padding: 0.5em;
+      margin-bottom: 0.25em;
+	}  
+      
+    .gallery-fourth li:nth-child(odd){
+    	clear: left;
+    } 
         
 	.g li:nth-child(3n+1) {
 		clear: left;}
