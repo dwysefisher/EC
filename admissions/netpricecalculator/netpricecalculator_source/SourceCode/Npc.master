@@ -1,0 +1,236 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Npc.master.cs" Inherits="Inovas.NetPrice.Npc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Net Price Calculator</title>
+    <style type="text/css">
+        .body
+        {
+             margin:0px 0px 0px 0px;
+             padding:33px 0px 0px 0px;             
+             font-family:Arial;
+             font-size:13px;
+             color:#333333;
+             background-color:#ffffff;
+             line-height:18px;
+        }
+        input { font-size:11px; }
+        .mainHeader
+        {
+            font-family:Arial;
+            font-size:12px;
+            color: #333333;
+            padding:4px;
+        }
+        
+        .mainTable
+        {
+            border-collapse:collapse;
+        }
+        
+        .mainTable td 
+        {
+            font-family:Arial;
+            font-size:11px;
+            color: #333333;
+            padding:4px;
+            border:1px solid #b5cfde;
+        }
+        .mainTable th
+        {
+            font-family:Arial;
+            font-size:11px;
+            color: #333333;
+            padding:4px;
+            border:1px solid #b5cfde;
+        }
+        .mainTable input
+        {
+            font-family:Arial;
+            font-size:11px;
+            background-color: #ffffff;
+            border:1px solid #c7ddea;
+        }
+        
+        .ColumnMainTitle 
+        {
+            font-family:Arial;
+            font-size:12px;
+            color: #336699;
+            font-weight:bold;
+        }
+        
+        .ColumnTableTitle 
+        {
+            font-family:Arial;
+            font-size:11px;
+            color: #336699;
+            font-weight:bold;
+        }        
+        .radiobutton {
+            /*margin:0px 0px 0px 0px; */            
+        }
+        
+        /*Styles for autocomplete on Npc_4.aspx*/
+        #divMatchedPrograms {
+            border:solid 1px #7f9db9; 
+            background-color:#e6f0f8;
+            padding:1px 0px 5px 0px;            
+            position:absolute;
+            z-index:100; 
+            width:222px; 
+            height:190px; 
+            overflow-y:scroll;             
+            display:none;
+        }        
+        #divMatchedPrograms a:link { text-decoration:none;color:#333333; }        
+        #divMatchedPrograms a:hover { text-decoration:none;color:#333333;  }
+        #divMatchedPrograms a:visited { text-decoration:none;color:#333333; }
+        .divMatchedProgramItem { cursor:pointer; padding:2px 2px 2px 6px; font-weight:12px; font-family:Arial; color:#333333; font-weight:normal; border-bottom: solid 1px #B1C2D3; }
+        .divMatchedProgramMarked { background-color:#b1c6d9; }
+        .matchedProgramsNotFound { padding:5px 5px 5px 5px; color:#CC0000; font-weight:bold; }
+        
+        .step-title
+        {
+            font-family:Arial;
+            font-size:13px;
+            font-weight:bold;
+            color:#6699cc;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript">
+        function showGuide() {            
+            $('#divHelpPopup').show();
+            return false;
+        }
+
+        function attachMouseOver(image, imageUrl) {
+            var imageDomEl;
+            if (typeof (image) == 'string')
+                imageDomEl = document.getElementById(image);
+            else
+                imageDomEl = image;
+
+            if (imageDomEl) {
+                imageDomEl.setAttribute('originalImageUrl', imageDomEl.src);
+                imageDomEl.onmouseover = function () {
+                    this.src = imageUrl;
+                }
+                imageDomEl.onmouseout = function () {
+                    this.src = this.getAttribute('originalImageUrl');
+                }
+            }
+        }
+
+    </script>
+</head>
+<body class="body">
+<form id="form1" runat="server">
+    <center>
+    <table border="0" cellpadding="0" cellspacing="0" width="796px">
+        <tr>
+            <td colspan="3" style="background-image:url(images/border_top.png);height:85px;">                
+                <div style="float:right; margin-top:12px; margin-right:23px; width:60px; height:39px;"><img id="imgIconHelp" src="images/icon_help.gif" alt="Help" title="Help" style="cursor:pointer;" onclick="showGuide()" /></div>
+            </td>
+        </tr>
+        <tr>
+            <td width="12px" style="background: url(images/border_left.png) repeat-y;"><img src="images/blank.gif" alt="" title="" /></td>
+            <td align="left" valign="top" style="height:300px; background-color:#fffef5; padding-top:17px;">
+                <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                    <tr>
+                        <td style="text-align:left; vertical-align:top;">                            
+                            
+                            <!-- Institution type and selected year-->
+                            <asp:PlaceHolder ID="phTitleWithInstitutionTypeAndYear" runat="server" Visible="true">
+                               <div style="height:40px;  margin-left:10px;margin-bottom:12px;">
+                                    <div style="float:left; width:30px; height:30px; margin-top:3px;"><img src="images\icon_pushpin.gif" alt="" /></div>
+                                    <div style="float:left; margin-left:15px;">
+                                        <div style="font-weight:bold;color:#cc6600;">Predominant Calendar System: <asp:Literal ID="ltInstitutionType" runat="server"></asp:Literal></div>
+                                        <div style="font-weight:bold;color:#cc6600; margin-top:2px;">Representative Year: <asp:Literal ID="ltYearText" runat="server"></asp:Literal></div>
+                                    </div>                                
+                                </div>
+                                <div style="clear:both;"></div>
+                                <img src="images/image_divider.gif" style="margin-bottom:10px; margin-left:13px;" alt="" />
+                            </asp:PlaceHolder>
+                            
+                            <!-- CONTENT -->
+                            <div style="margin-left:12px; margin-top:4px;">
+                                <asp:contentplaceholder id="cphMain" runat="server"></asp:contentplaceholder>
+                            </div>
+                            
+                        </td>
+                        <td style="text-align:right; vertical-align:top; width:200px;">
+                            <div style="text-align:center;"><img src="images/bg_r.jpg" alt="background image" title="background image" /></div>
+                            <div id="divJavaScriptWarning" runat="server" visible="false" style="margin:35px 0px 0px 10px; text-align:left;">
+                                <noscript>
+                                    <img src="images/javascript_note.gif" alt="You must have JavaScript enabled in your browser to use this site." title="You must have JavaScript enabled in your browser to use this site." />
+                                </noscript>
+                            </div>                            
+                            <!--Popup with help-->                                
+                            <div style="position:relative;z-index:999;">
+                                <div id="divHelpPopup" style="display:none;position:absolute; z-index:999;top:-220px; left:-200px;width:450px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="left" valign="top" width="12px"><img src="images/npc_tlc.gif" alt="" title="" /></td>
+                                            <td align="left" valign="top" style="background:url(images/npc_tb.gif) repeat-x;"><img src="images/npc_tb.gif" alt="" title="" /></td>
+                                            <td align="left" valign="top" width="12px"><img src="images/npc_trc.gif" alt="" title="" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" width="12px" style="background: url(images/npc_lb.gif) repeat-y;"><img src="images/npc_lb.gif" alt="" title="" /></td>
+                                            <td align="left" valign="top" style="background-color:#ffffff;">
+                                                <div style="text-align:right;margin-bottom:4px;">
+                                                    <a href="javascript:$('#divHelpPopup').hide(); void(0);"><img src="images/icon_close.gif" alt="Close" title="Close" style="cursor:pointer;border-width:0px;" /></a>
+                                                </div>
+                                                <div style="height:390px; font-size:11px;padding-left:10px;padding-right:5px;">
+                                                    The Net Price Calculator Quick Start Guide is designed to walk you through the basic steps required to configure and host a customized version of the U.S. Department of Education’s Net Price Calculator application on your institution’s website. 
+                                                    A glossary of key terms related to the Net Price Calculator template is also included to assist you with correctly inputting data and setting up your institution's calculator. 
+                                                    Click on the links below to access the Quick Start Guide for use with <i>either</i> Internet Explorer or Mozilla Firefox in printable, PDF format:
+                                                    <br /><br />
+                                                        
+                                                    <a href="Download/QuickStart_IE.pdf" target="_blank">View/Download the Quick Start Guide for Internet Explorer</a><br /> Click here to access the Quick Start Guide for use with Internet Explorer 7.0 and above (file size 1 MB).
+                                                    <br /><br />
+                                                    <a href="Download/QuickStart_Mozilla.pdf" target="_blank">View/Download the Quick Start Guide for Mozilla Firefox</a><br /> Click here to access the Quick Start Guide for use with Mozilla Firefox 3.0 and above (file size 1 MB).                                                         
+                                                    <br /><br />
+                                                    For immediate assistance with any additional questions or problems related to system usage, please contact the Net Price Calculator Help Desk toll-free at (877) 299-3593 or  <a href="mailto:npc@inovas.net">Npc@inovas.net</a>. 
+                                                </div>
+                                            </td>
+                                            <td align="left" valign="top" width="12px" style="background: url(images/npc_rb.gif) repeat-y;"><img src="images/npc_rb.gif" alt="" title="" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" width="12px"><img src="images/npc_blc.gif" alt="" title="" /></td>
+                                            <td align="left" valign="top" style="background:url(images/npc_bb.gif) repeat-x;"><img src="images/npc_bb.gif" alt="" title="" /></td>
+                                            <td align="left" valign="top" width="12px"><img src="images/npc_brc.gif" alt="" title="" /></td>
+                                        </tr>
+                                    </table>                                       
+                                </div>
+                            </div>                            
+                        </td>
+                    </tr>                    
+                </table>
+
+                <div style="margin-top:10px;">
+                    <!-- Bottom placeholder -->                    
+                    <asp:contentplaceholder id="cphFooter" runat="server"></asp:contentplaceholder>
+                </div>
+
+            </td>
+            <td  width="12px" style="background: url(images/border_right.png) repeat-y;"><img src="images/border_right.png" alt="" title="" /></td>
+        </tr>
+        <tr>
+            <td width="12px"><img src="images/border_bottom_left.png" alt="" title="" /></td>
+            <td style="background:url(images/border_bottom_center.png) repeat-x;"><img src="images/blank.gif" alt="" title="" /></td>
+            <td width="12px"><img src="images/border_bottom_right.png" alt="" title="" /></td>
+        </tr>
+    </table>
+    <br /><br />
+    </center>
+    <script type="text/javascript">
+        attachMouseOver('imgIconHelp', 'images/icon_help_hover.gif');
+    </script>
+</form>
+</body>
+</html>
