@@ -99,9 +99,13 @@
 		color: #ADADAD;
 		text-decoration:none;}
 	
-	.no-bullet li {
+	.no-bullet ul {
 		list-style: none;
 		text-decoration: none; }
+	
+	.no-bullet li {
+		list-style: none;
+		text-decoration: none !important;}
 	
 	.no-bullet a {
 		text-decoration: underline;
@@ -112,6 +116,11 @@
 img#wpstats {
 display: none;
 }
+
+	.underline {
+		text-decoration: none !important; 
+		border-bottom: 1px dotted !important;
+	}
 
 /*================================================================================
 
@@ -594,8 +603,8 @@ col.commuter {
     
     .gallery-third figcaption {
       margin-left: -6px;
-      padding: 1em 0.5em;}    
-    
+      padding: 1em 0.5em;} 
+       
     .gallery-fourth li {
       display: inline;
       max-width: 45%;

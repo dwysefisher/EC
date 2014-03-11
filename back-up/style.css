@@ -494,7 +494,7 @@ em,
 }
 small,
 .small {
-  font-size: 75%;
+  font-size: 75% !important;
 }
 ul,
 ol {
@@ -606,6 +606,7 @@ span.amp {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
+  border-radius: 4px;
 }
 .alert-help {
   margin: 10px;
@@ -618,8 +619,12 @@ span.amp {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
-  border-color: #bfe4f4;
-  background: #d5edf8;
+/*  border-color: #bfe4f4;
+/*  background: #d5edf8;*!/*/
+  color: #cc9900;
+  background-color: #FFFFBF;
+  border-color: #cc9900;
+  max-width: 100% !important;
 }
 .alert-error {
   margin: 10px;
@@ -634,6 +639,14 @@ span.amp {
   border: 1px solid;
   border-color: #deeaae;
   background: #e6efc2;
+}
+
+.alert-event-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #a9a9a9;
+  background: #C0C0C0;
 }
 /*********************
 BORDER RADIUS
@@ -766,7 +779,7 @@ Stylesheet: Base Mobile Stylesheet
 
 Be light and don't over style since everything here will be
 loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
+possible. This is called at the top of the main stylesheet
 and will be used across all viewports.
 
 ------------ MAP ------------
@@ -1050,7 +1063,7 @@ and more scalable.
   margin-bottom: 1.5em;
 }
 .entry-content img {
-  margin: 0 0 1.5em 0;
+  margin: 0;
   max-width: 100%;
   height: auto;
 }
@@ -1454,7 +1467,7 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) {
   .top-nav{display: none;}
   .home-header-logo-inner{min-width: none;}
   .header-main-nav{display: none;}
@@ -1614,20 +1627,22 @@ tweeners.
   ul.mobile-footer-menu-list li:last-child{padding: 0;}
   ul.mobile-footer-menu-list li a{color: #ffffff; text-decoration: none;}
   .quick-links-column-one,.quick-links-column-two,.quick-links-column-three,.quick-links-column-four{display: none;}
-  .footer-brand-content{width: 80%; overflow: hidden; margin: 20px auto 20px auto;}
-  .footer-college-seal{width: 33%; float: left;}
-  .footer-college-seal img{width: 100%; height: auto;}
-  .footer-learn-serve-lead{width: 66%; float: right;}
+  .footer-main-container{margin: 0 auto; width: 100%; }
+  .footer-brand-content{width: 90%; overflow: hidden; margin: 20px auto 20px auto;}
+  .footer-college-seal{width: 100%; display: block !important;  }
+  .footer-college-seal img{width: 40%; height: auto;margin-left: 5em; padding-bottom: 1em; }
+  .footer-learn-serve-lead{width: 100%;}
   .learn-serve-lead-header{width: 100%;}
   .learn-serve-lead-header img{width: 90%; height: auto; padding: 0 0 0 20px;}
-  .learn-serve-lead-content{width: 90%; padding: 0 0 0 20px; font-size: .5em;}
-  .reagan-tcucc{width: 90%; padding: 0 0 0 15px; overflow: hidden;}
-  .reagan-tcucc .footer-reagan-logo img{width: 55%; height: auto; float: left;}
-  .reagan-tcucc .footer-tcucc-logo img{width: 35%; height: auto; float: right;}
-  .footer-social-icons{text-align: center;}
+  .learn-serve-lead-content{width: 90%; padding: 0 0 0 20px; font-size: .8em;}
+  .reagan-tcucc{width: 90%; padding: 0 0 0 15px; overflow: hidden; margin-left: 3em; }
+  .reagan-tcucc .footer-reagan-logo img{width: 50%; height: auto; padding-bottom: 1em; margin: 0 auto;}
+  .reagan-tcucc .footer-tcucc-logo img{width: 50%; height: auto; padding-bottom: 1em; margin: 0 auto;}
+  .footer-social-icons{text-align: center; display: block !important; }
   .social-icon{padding: 0 10px 0 10px;}
   .footer-copyright{text-align: center; font-size: .7em; color: #ffffff;}
-  
+  .footer-address{width: 100%; text-align: center; font-size: 0.8em; float: right; display: block; clear: both; margin: 1em auto; }
+  .address{ font-style: normal;}
   
 }
 /*
@@ -1800,12 +1815,12 @@ you can add resource intensive styles.
   min-width: 900px;
   width: 90%;
   margin: -120px auto 0 auto;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.8) 93%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(65%,rgba(0,0,0,0.8)), color-stop(93%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.6) 93%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(85%,rgba(0,0,0,0.6)), color-stop(93%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 
   }
@@ -2095,8 +2110,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .footer-quick-links{min-width: 470px; width: 50%; float: left; overflow: hidden; margin: 25px 0 0 0;}
   .footer-brand-content{float: right; overflow: hidden; margin: 0 30px 0 0;}
   .quick-links-column-one, .quick-links-column-two, .quick-links-column-three, .quick-links-column-four{float: left;}
-  .quick-links-column-one{padding: 0 0 0 20px;}
-  .quick-links-column-two, .quick-links-column-three, .quick-links-column-four{padding: 0 0 0 25px;}
+  .quick-links-column-one{padding: 0 20px 0 20px;}
+  .quick-links-column-two, .quick-links-column-three, .quick-links-column-four{padding: 0 25px 0 0;}
   .quick-links-header{color: #c4a006; font-size: .8em;}
   .quick-links-list{margin-top: 0; padding-top: 0;}
   .quick-links-list li{font-size: .8em;}
@@ -2111,6 +2126,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .footer-social-icons{padding: 0 0 0 20px;}
   .social-icon{padding: 0 20px 0 0;}
   .footer-copyright{font-size: .7em; color: #ffffff; padding: 0 0 0 20px;}
+  .footer-address{float: right; text-align: right; font-size: 0.8em; margin: -3em 4em 2em 0;}
+  .address{ font-style: normal;}
+  
   .footer-links ul li {}
   .mobile-footer-quick-links-title{display: none;}
   
@@ -2139,9 +2157,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     -ms-filter: none !important;
   }
   a,
-  a:visited {
+  a:visited,
+  a:link {
     color: #444 !important;
     text-decoration: underline;
+    font-size: 10px;
   }
   a:after,
   a:visited:after {
@@ -2194,5 +2214,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .header, .secondary-header-images, .footer{display: none;}
   #main{width: 100%;}
   #content{box-shadow: none; -moz-box-shadow: none;}
+  
+  p {
+  	font-size: 11px;
+  	line-height: 13px;
+  }
+  
+  h4 {
+  	font-size: 16px;
+  	letter-spacing: normal;
+  }
+  
+  h3 {
+  	font-size: 21px;
+  }
   
 }

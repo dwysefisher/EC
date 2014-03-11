@@ -17,7 +17,6 @@ of the styles inside media queries.
  * Corrects `block` display not defined in IE6/7/8/9 & FF3.
  */
 @import url(custom-content-styles.css);
-@import url(nsse-style.css);
 article,
 aside,
 details,
@@ -202,6 +201,7 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 /*
  * Addresses CSS quotes not supported in IE6/7.
  */
@@ -494,7 +494,7 @@ em,
 }
 small,
 .small {
-  font-size: 75%;
+  font-size: 75% !important;
 }
 ul,
 ol {
@@ -887,6 +887,11 @@ a:visited:link {
 		*/
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+p a:link, a:visited {
+	text-decoration: none !important; 
+	border-bottom: 1px dotted !important;
 }
 /******************************************************************
 05. H1, H2, H3, H4, H5 STYLES
@@ -1467,7 +1472,7 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) {
   .top-nav{display: none;}
   .home-header-logo-inner{min-width: none;}
   .header-main-nav{display: none;}
@@ -1815,12 +1820,12 @@ you can add resource intensive styles.
   min-width: 900px;
   width: 90%;
   margin: -120px auto 0 auto;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.8) 93%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(65%,rgba(0,0,0,0.8)), color-stop(93%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.8) 93%); /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.6) 93%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(85%,rgba(0,0,0,0.6)), color-stop(93%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgba(0,0,0,0.6) 93%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 
   }
@@ -1954,13 +1959,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   #main ul{list-style-position: inside; list-style-type: disc; padding: 0 0 0 20px;}
   #main ol{list-style-position: inside; list-style-type: decimal; padding: 0 0 0 20px;}
   .homepage-lower-content{width: 100%; clear: both;}
-  .homepage-lower-links{width: 100%; overflow: hidden; margin: 40px 0 0 0; padding: 40px 0 0 0; border-top: 4px solid #ffffff;}
+/*  .homepage-lower-links{width: 100%; overflow: hidden; margin: 40px 0 0 0; padding: 40px 0 0 0; border-top: 4px solid #ffffff;}
   .homepage-lower-links-column-one{width: 33%; float: left; text-align: left;}
   .homepage-lower-links-column-two{width: 33%; float: left; text-align: center;}
-  .homepage-lower-links-column-three{width: 33%; float: right; text-align: right;}
+  .homepage-lower-links-column-three{width: 33%; float: right; text-align: right;}*/
   .homepage-lower-graphics{width: 100%; overflow: hidden; margin: 80px 0 80px 0;}
   .homepage-lower-graphics-column-one, .homepage-lower-graphics-column-two, .homepage-lower-graphics-column-three, .homepage-lower-graphics-column-four{width: 25%; float: left; text-align: center;}
   #comment-nav ul{list-style: none;}
+
+.homepage-lower-links{width: 100%; max-width: 100%;
+	overflow: hidden; margin: 3em 0 1em 0; border-top: 4px solid #ffffff; padding-top: 2em; }
+.homepage-lower-links-column-one, .homepage-lower-links-column-two, .homepage-lower-links-column-three, .homepage-lower-links-column-four{width: 25%; float: left; text-align: center;}
+
+
+
+  
   /*********************
   SIDEBARS & ASIDES
   *********************/
@@ -2159,9 +2172,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   a,
   a:visited,
   a:link {
-    color: #520 !important;
+    color: #444 !important;
     text-decoration: underline;
-    font-size: 10pt;
+    font-size: 10px;
+    text-decoration: none !important; 
+    border-bottom: 1px dotted !important;
   }
   a:after,
   a:visited:after {
@@ -2216,17 +2231,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   #content{box-shadow: none; -moz-box-shadow: none;}
   
   p {
-  	font-size: 11pt;
-  	line-height: 13pt;
+  	font-size: 11px;
+  	line-height: 13px;
   }
   
   h4 {
-  	font-size: 16pt;
+  	font-size: 16px;
   	letter-spacing: normal;
   }
   
   h3 {
-  	font-size: 21pt;
+  	font-size: 21px;
   }
   
 }
