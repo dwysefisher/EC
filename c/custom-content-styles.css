@@ -122,6 +122,10 @@ display: none;
 		border-bottom: 1px dotted !important;
 	}
 
+.no-underline {
+	text-decoration: none !important; 
+	border-bottom: none !important;
+}
 /*================================================================================
 
 								BUTTON & ALERTS STYLING
