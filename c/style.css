@@ -1967,9 +1967,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .homepage-lower-graphics-column-one, .homepage-lower-graphics-column-two, .homepage-lower-graphics-column-three, .homepage-lower-graphics-column-four{width: 25%; float: left; text-align: center;}
   #comment-nav ul{list-style: none;}
 
-.homepage-lower-links{width: 100%; max-width: 100%;
-	overflow: hidden; margin: 3em 0 1em 0; border-top: 4px solid #ffffff; padding-top: 2em; }
-.homepage-lower-links-column-one, .homepage-lower-links-column-two, .homepage-lower-links-column-three, .homepage-lower-links-column-four{width: 25%; float: left; text-align: center;}
+.homepage-lower-links{width: 100%; max-width: 100%; overflow: hidden; margin: 3em 0 1em 0; border-top: 3px solid #fff; padding-top: 2em; padding-right: 20px; }
+.homepage-lower-links-column-one, .homepage-lower-links-column-two, .homepage-lower-links-column-three, .homepage-lower-links-column-four, .homepage-lower-links-column-five {width: 20%; float: left; text-align: center;}
+
+.homepage-lowerlinks-column-one {
+	background-color: #cc9900 !important;
+}
 
 
 

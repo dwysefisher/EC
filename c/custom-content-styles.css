@@ -305,7 +305,35 @@ figure{
 .gallery-fourth li:nth-child(4n+1) {
 	clear: left;
 	padding-right: 2.5%;}	
+	
+	
+.gallery-fifth li:nth-child(4n+1) {
+	clear: left;
+	padding-right: 2.5%;}	
 
+.gallery-fifth figcaption {
+	font-size: 0.75em;
+	padding: 0 0 1.5em 0;
+	max-width: 95%;
+}
+
+.gallery-fifth li {
+	float: left;
+	width: 18%;
+	padding: 0 2.5%;
+	list-style-type: none;}	
+	
+.gallery-fifth img {
+	display: inline-block;
+  	max-width: 100%;
+  	max-height: 100%;
+	margin-bottom: -0.5em;
+}
+
+.gallery-fifth a{
+	margin: 0;
+}	
+	
 
 /*===================================GALLERY=================================*/
 
