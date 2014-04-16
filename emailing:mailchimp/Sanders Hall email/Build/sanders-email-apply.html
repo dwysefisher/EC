@@ -6,12 +6,12 @@
 				<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
         <style type="text/css">
 			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
-			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			#outlook a{padding:0;} 
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} 
 			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
-			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} 
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} 
+			img{-ms-interpolation-mode:bicubic;} 
 
 			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
 			body{margin:0; padding:0;}
@@ -22,12 +22,12 @@
 			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
 
 			#bodyCell{padding:20px;}
-			#templateContainer{width:600px;}
+			#templateContainer{width:590px; max-width: 95% !important;}
 
 			/* ========== Page Styles ========== */
 
 			body, #bodyTable{
-				background-color:#DEE0E2;
+				background-color:#FFFFFF;
 				font-family:'Open Sans', Geneva, Arial, sans-serif;
 			}
 
@@ -43,7 +43,7 @@
 				color:#202020 !important;
 				display:block;
 				font-family: 'Open Sans', Geneva, Helvetica;
-				font-size:24px;
+				font-size:22px;
 				font-style:normal;
 				font-weight:bold;
 				line-height:100%;
@@ -105,6 +105,11 @@
 			
 			p {
 				font-family:'Open Sans', Geneva, Helvetica;				
+				color:#808080 !important;
+			}
+			
+			li {
+				color:#404040 !important;
 			}
 
 			/* ========== Header Styles ========== */
@@ -162,14 +167,14 @@
 			/* ========== Body Styles ========== */
 
 			#templateBody{
-				background-color:#F4F4F4;
+				background-color:#FFFFFF;
 				border-top:1px solid #FFFFFF;
 				border-bottom:1px solid #CCCCCC;
 			}
 
 			.bodyContent{
-				color:#505050;
-				font-family:Helvetica;
+				color:#404040;
+				font-family:'Open Sans', Geneva, Helvetica, sans-serif;
 				font-size:14px;
 				line-height:150%;
 				padding-top:20px;
@@ -192,7 +197,7 @@
 			}
 			
 			.bodyContent ul {
-				font-family: 'Open Sans', Geneva, Helvetica;
+				font-family: 'Open Sans', Geneva, Helvetica, sans-serif;
 			}
 
 			/* ========== Footer Styles ========== */
@@ -204,7 +209,7 @@
 
 			.footerContent{
 				color:#808080;
-				font-family:Helvetica;
+				font-family: 'Open Sans', Geneva, Helvetica, sans-serif;
 				font-size:10px;
 				line-height:150%;
 				padding-top:20px;
@@ -224,8 +229,8 @@
 
             @media only screen and (max-width: 480px){
 				/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
-				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
-                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} 
+                body{width:100% !important; min-width:100% !important;} 
 
 				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
 				#bodyCell{padding:10px !important;}
@@ -235,8 +240,9 @@
 				/* ======== Page Styles ======== */
 
 				#templateContainer{
-					max-width:300px !important;
+					max-width:440px !important;
 					width:100% !important;
+					border: 0px !important;
 				}
 
 				h1{
@@ -261,7 +267,7 @@
 
 				/* ======== Header Styles ======== */
 
-				#templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+				#templatePreheader{display:none !important;} 
 
 				#headerImage{
 					height:auto !important;
@@ -294,27 +300,27 @@
 					line-height:115% !important;
 				}
 
-				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+				.footerContent a{display:block !important;} 
 			}
 		</style>
     </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
     	<center>
-        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="background-color:#FFFFFF; bgcolor:#FFFFFF; max-width: 100%; width: 600px;">
             	<tr>
                 	<td align="center" valign="top" id="bodyCell">
                     	<!-- BEGIN TEMPLATE // -->
-                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="border:10px solid #BBBBBB;">
                         	<tr>
-                            	<td align="center" valign="top">
+                            	<td align="center" valign="top" style="background-color:#DEE0E2;">
                                 	<!-- BEGIN PREHEADER // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader" style="background-color:#DEE0E2; max-width: 600px;">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;">
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px; font-family:'Open Sans', Geneva, Arial, sans-serif; color: #808080;">
                                                 At Eureka College, we believe your learning environment matters &ndash; in two ways.
                                             </td>
-                                            <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;">
-                                                Email not displaying correctly?<br /><a href="http://www.eureka.edu/email/SandersHall/sanders-email-apply.html" target="_blank" style="border-bottom: 1px dotted;text-decoration: none;">View it in your browser</a>.
+                                            <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;font-family:'Open Sans', Geneva, Arial, sans-serif; color: #808080;">
+                                                Email not displaying correctly?<br /><a href="http://www.eureka.edu/email/SandersHall/sanders-email-apply.html" target="_blank" style="border-bottom: 1px dotted;text-decoration: none;color:#cc9900;">View it in your browser</a>.
                                             </td>
                                         </tr>
                                     </table>
@@ -326,7 +332,7 @@
                                 	<!-- BEGIN HEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader" align="center">
                                         <tr>
-                                            <td valign="top" style="background-color:#FFF; text-align:center; padding: 1em 0;"><img src="http://www.eureka.edu/d-l/LOGO3c-150px.png">
+                                            <td valign="top" style="background-color:#FFF; text-align:center; padding: 1em 0;font-family:'Open Sans', Geneva, Arial, sans-serif;"><a href="http://www.eureka.edu" style="outline: none;"><img src="http://www.eureka.edu/d-l/LOGO3c-150px.png" alt="Eureka College" title="Visit Eureka College" style="border:0;" border="0"></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -338,11 +344,11 @@
                                 	<!-- BEGIN BODY // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent">
-                                                <img src="http://www.eureka.edu/d-l/Sanders-exterior-web600px.jpg" style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 100%; padding-bottom: 1em;" id="headerImage">
-                                                <h1>At Eureka College, we believe your learning environment matters &ndash; in two ways</h1>
-                                                <p><b>1. State-of-the-Art Facility</b> &ndash; Sanders Hall, a new four-story classroom and laboratory building at Eureka College will include cutting-edge teaching space as well as contemporary student lounge areas, including:</p>
-                                                <ul> 
+                                            <td valign="top" class="bodyContent" style="background-color:#FFF; padding: 0 20px;">
+                                                <img src="http://www.eureka.edu/d-l/Sanders-exterior-web600px.jpg" style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;display: inline;max-width: 100%; padding-bottom: 1em; text-align:center;" id="bodyImage" alt="Exterior rendering of Sanders Hall" title="Exterior rendering of Sanders Hall">
+                                                <h1 style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;">At Eureka College, we believe your learning environment matters &ndash; in two ways</h1>
+                                                <p style="font-family:'Open Sans', Geneva, Arial, sans-serif; color:#404040 !important;"><strong>1. State-of-the-Art Facility</strong> &ndash; Sanders Hall, a new four-story classroom and laboratory building at Eureka College will include cutting-edge teaching space as well as contemporary student lounge areas, including:</p>
+                                                <ul style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;"> 
                                                 	<li>Four new classrooms and a tiered multi-media classroom</li>
                                                 	<li>Organic/inorganic chemistry lab</li>
                                                 	<li>Student lounge space for collaborative learning</li>
@@ -350,14 +356,14 @@
                                             </td>
                                         </tr>
                                     	<tr>
-                                        	<td class="bodyContent" style="padding-top:1em; padding-bottom:0; text-align:center;">
-                                            	<img src="http://www.eureka.edu/d-l/SandersHall-interior-lounge-web.jpg" style="max-width:560px;" id="bodyImage"/>
+                                        	<td class="bodyContent" style="padding-top:1em; padding-bottom:0; text-align:center;background-color:#FFF; padding: 0 20px;">
+                                            	<img src="http://www.eureka.edu/d-l/SandersHall-interior-lounge-web.jpg" style="max-width:560px;" id="bodyImage" alt="Rendering of lounge in Sanders Hall" title="Sanders Hall lounge"/>
                                             </td>
                                         </tr>
                                         <tr>
-                                           <td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:1em;">
-                                           	<p><b>2. Global Sustainability</b> &ndash; Sanders Hall is being built to qualify for LEED Certification*, the global standard for green building practices. The incredible environmentally friendly construction features include:</p>
-                                      					<ul> 
+                                           <td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:1em;background-color:#FFF;color:#404040;">
+                                           	<p style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040 !important;background-color:#FFF; padding: 0 20px;"><strong>2. Global Sustainability</strong> &ndash; Sanders Hall is being built to qualify for LEED Certification*, the global standard for green building practices. The incredible environmentally friendly construction features include:</p>
+                                      					<ul style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;"> 
                                       						<li>Geothermal power will heat and cool the building;</li>
                                       						<li>Locally manufactured and purchased building materials;</li>
                                       						<li>Native plants for landscaping that will also be used as teaching space;</li>
@@ -366,25 +372,23 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:0; text-align:center;">
-                                           	<img src="http://www.eureka.edu/d-l/SandersHall-interior-stairwell-web.jpg" style="max-width:560px;" id="bodyImage"/>   
+                                            <td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:0; text-align:center;background-color:#FFF; padding: 0 20px;">
+                                           	<img src="http://www.eureka.edu/d-l/SandersHall-interior-stairwell-web.jpg" style="max-width:560px;" id="bodyImage" alt="Rendering of the stairwell of Sanders Hall" title="Sanders Hall stairwell"/>   
                                            </td>
                                         </tr>
                                         <tr>
-																					<td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:0;">
-																					<p><a href="www.eureka.edu/sandershall" style="border-bottom: 1px dotted;text-decoration: none;color: #cc9900;font-weight: normal;">Sanders Hall</a> is under construction now and will be open for classes this August!</p>
-																					
-																					<p>Be among the first to learn within the walls of Eureka&rsquo;s new classroom and laboratory building!</p>
+																					<td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:0;background-color:#FFF; padding: 0 20px;">
+																					<p style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;background-color:#FFF; padding: 0 20px;"><a href="www.eureka.edu/sandershall" style="border-bottom: 1px dotted;text-decoration: none;color: #cc9900;font-weight: normal;color:#cc9900;">Sanders Hall</a> is under construction now and will be open for classes this August! Be among the first to learn within the walls of Eureka&rsquo;s new classroom and laboratory building!</p>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td><p style="text-align:center"><a href="http://www.eureka.edu/admissions/apply-now/" style="display: inline-block; padding: 12px 36px; margin-bottom: 0;background-color: #990033; color: #FFFFFF ! important; font-size: 14px; line-height: 1.428571429; text-align: center; white-space: nowrap;  vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent;  border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; border-bottom: 0px dotted;text-decoration: none;color: #cc9900;font-weight: normal;">Apply today!</a></p>
+																					<td valign="top" class="bodyContent" style="background-color:#FFF; padding: 20px;"><p style="text-align:center; font-family:'Open Sans', Geneva, Arial, sans-serif;"><a href="http://www.eureka.edu/admissions/apply-now/" style="display: inline-block; padding: 12px 36px; margin-bottom: 0;background-color: #990033; color: #FFFFFF ! important; font-size: 14px; line-height: 1.428571429; text-align: center; white-space: nowrap;  vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent;  border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; border-bottom: 0px dotted;text-decoration: none;color: #FFFFFF;font-weight: normal;">Apply today!</a></p>
 																					</td>
 																				</tr>																					
 																				<tr>
-																						<td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:0; text-align:center;">
-																						<img src="http://www.eureka.edu/d-l/SandersHall-interior-elevator-web.jpg" style="max-width:560px;" id="bodyImage"/>
-																						<p style="padding-top:1em; padding-bottom:0; text-align:left;">*LEED stands for Leadership in Energy and Environmental Design and is a program of the U.S. Green Building Council.</p>
+																						<td valign="top" class="bodyContent" style="padding-top:1em; padding-bottom:0; text-align:center;background-color:#FFF; padding: 20px;">
+																						<img src="http://www.eureka.edu/d-l/SandersHall-interior-elevator-web.jpg" style="max-width:600px;" id="bodyImage" alt="Rendering of elevator and stairwell in Sanders Hall" title="Sanders Hall elevator and stairwell"/>
+																						<p style="padding-top:1em; padding-bottom:0; text-align:left; font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;">*LEED stands for Leadership in Energy and Environmental Design and is a program of the U.S. Green Building Council.</p>
 																					</td>
 																				</tr>
                                     </table>
@@ -396,25 +400,21 @@
                                 	<!-- BEGIN FOOTER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
-                                            <td valign="top" class="footerContent">
-                                                <a href="http://www.twitter.com/eurekacollege" style="border-bottom: 1px dotted;text-decoration: none;color: #cc9900;font-weight: normal;">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/eurekacollege" style="border-bottom: 1px dotted;text-decoration: none;color: #cc9900;font-weight: normal;">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;
+                                            <td valign="top" class="footerContent" style="padding: 20px;background-color:#DEE0E2;">
+                                                <a href="http://www.twitter.com/eurekacollege" style="border-bottom: 1px dotted;text-decoration: none;color: #cc9900;font-weight: normal;font-family:'Open Sans', Geneva, Arial, sans-serif;">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/eurekacollege" style="border-bottom: 1px dotted;text-decoration: none;color: #cc9900;font-weight: normal;font-family:'Open Sans', Geneva, Arial, sans-serif;">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="footerContent" style="padding-top:0;">
-                                                <em>Copyright &copy; 2014 Eureka College, All rights reserved.</em>
+                                            <td valign="top" class="footerContent" style="padding-top:0; padding: 20px;background-color:#DEE0E2;">
+                                                <em style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;">Copyright &copy; 2014 Eureka College, All rights reserved.</em>
                                                 <br />
                                                 <br />
-                                                <strong>Our mailing address is:</strong>
+                                                <strong style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;">Our mailing address is:</strong>
                                                 <br />
-                                                300 E. College Ave, Eureka, IL 61530 
+                                                <span style="font-family:'Open Sans', Geneva, Arial, sans-serif;color:#404040;">300 E. College Ave, Eureka, IL 61530</span>
                                             </td>
                                         </tr>
-<!--                                        <tr>
-                                            <td valign="top" class="footerContent" style="padding-top:0;">
-                                            	<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;<a href="">update subscription preferences</a>&nbsp;
-                                            </td>
-                                        </tr>-->
+
                                     </table>
                                     <!-- // END FOOTER -->
                                 </td>
