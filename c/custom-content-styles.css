@@ -522,7 +522,7 @@ figure{
 	color: #990033;}
 	
 #hor-zebra td {
-	padding: 8px;
+	padding: 10px;
 /*	color: #565656;*/
   	vertical-align: top;}
   	
@@ -540,7 +540,10 @@ figure{
 .data-table > tbody > tr > td {
 	border-bottom: 1px solid #DCDCDC;
 	vertical-align: top;
-	padding-top: 1em;}
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 0.5em;
+}
 	
 .data-table > thead > tr > th {
 	vertical-align: bottom;
@@ -578,6 +581,9 @@ col.commuter {
 	border: none !important;
 }
 
+.checkmark {
+	text-align: center;
+}
 
 /*==============END ZEBRA TABLE LAYOUT======================*/
 
