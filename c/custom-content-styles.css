@@ -131,6 +131,10 @@ display: none;
 	text-decoration: none !important; 
 	border-bottom: none !important;
 }
+
+.hot-links-top {
+	font-size: 0.8em !important;
+}
 /*================================================================================
 
 								BUTTON & ALERTS STYLING
