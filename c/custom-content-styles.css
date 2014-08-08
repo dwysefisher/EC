@@ -135,6 +135,12 @@ display: none;
 .hot-links-top {
 	font-size: 0.8em !important;
 }
+
+.extra-space {
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
 /*================================================================================
 
 								BUTTON & ALERTS STYLING
