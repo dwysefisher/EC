@@ -1,5 +1,5 @@
-
 # BEGIN WordPress
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -7,9 +7,10 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
-</IfModule>
+</IFModule>
 
 # END WordPress
+
 <IfModule mod_rewrite.c>
 RewriteRule ^discover/?$ http://www.eureka.edu/discover/discover-eureka/ [R=301,L]
 RewriteRule ^academics/?$ http://www.eureka.edu/academics/eureka-academics/ [R=301,L]
@@ -25,8 +26,7 @@ RewriteRule ^on-campus/?$ http://www.eureka.edu/on-campus/eureka-campus/ [R=301,
 RewriteRule ^reagan/?$ http://www.eureka.edu/reagan/reagan/ [R=301,L]
 RewriteRule ^arts/?$ http://www.eureka.edu/arts/arts/ [R=301,L]
 RewriteRule ^library/?$ http://www.eureka.edu/library/melick-library/ [R=301,L]
-RewriteRule ^career-services/?$ http://www.eureka.edu/career-services/careerservices/ [R=301,L]
+RewriteRule ^career-services/?$ http://www.eureka.edu/career-services/career-services/ [R=301,L]
 RewriteRule ^giving/?$ http://www.eureka.edu/giving/give-now/ [R=301,L]
 RewriteRule ^admissions/?$ http://www.eureka.edu/admissions/eureka-admissions/ [R=301,L]
-
 </IFModule>

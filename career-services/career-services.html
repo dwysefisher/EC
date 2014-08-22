@@ -88,34 +88,39 @@ Located in Student Programs and Services Office, Cerf Center
 
 <p>All necessary paperwork must be submitted prior to the final day to add courses to one's schedule. Students should be advised that it is completing the required internship paperwork late could impact financial aid and a student's account. Thus, it is recommended that all paperwork be completed early in the prior semester before the internship experience will take place.</p>
 
- <style>
-	div.panelRow {clear: both; }
- div.panelRow span.panelLabel {float: left;width: 115px;text-align:right;font-size: 10pt;font-family: 'Open Sans', Geneva, helvetica, sans-serif; }
- div.panelRow span.panelFormw {float: right;width: 150px;text-align: right; }
- </style>
-<form method="post" action="https://www.myinterfase.com/eureka/student/home.aspx">
-<input type="hidden" name="offsite" id="offsite" value="1" />
-<div id="container">
- <div id="main" style="width: 400px;">
- <div class="panelRow">
- <span class="panelLabel">User Name:</span>
- <span class="panelForm"><input type="text" id="username" name="username" /></span>
- </div>
- <div class="panelRow">
- <span class="panelLabel">Password:</span>
- <span class="panelForm"><input type="password" id="pwd" name="pwd" /></span>
- </div>
- <div style="padding-left:115px;"><input type="Submit" id="submit" value="Login" /></div>
- <div style="padding-left:115px;padding-top:10px;font-size: 10pt;">
+<!-- <style>
+	div.panelRow {clear: both; background-color:#A6A6A6 !important; }
+ div.panelRow span.panelLabel {float: left;width: 115px; text-align: right;font-size: 10pt;font-family: 'Open Sans', Geneva, Helvetica, sans-serif; padding-right: 10px; }
+ div.panelRow span.panelForm {float: left; width: 150px; text-align: right; padding-bottom: 15px; }
+ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif; }
 
- <a href="https://www.myinterfase.com/eureka/studentregistration.aspx" class="underline">Click here to register</a>
- </div>
- <div style="padding-left:115px;padding-top:8px;font-size: 10pt;">
- <a href="https://www.myinterfase.com/eureka/passwordreset.aspx?ac=274" class="underline">Forgot Password?</a>
- </div>
- </div>
-</div>
-</form>
+ </style>-->
+ 
+<article style="font-family: 'Open Sans', Geneva, helvetica, sans-serif !important;">
+	<form method="post" action="https://www.myinterfase.com/eureka/student/home.aspx">
+		<input type="hidden" name="offsite" id="offsite" value="1" />
+		<div id="container" >
+		<div id="main" style="width: 400px;">
+		<div class="panelRow">
+		<span class="panelLabel">User Name:</span>
+		<span class="panelForm"><input type="email" id="username" name="username" placeholder="email address" class="text" /></span>
+		</div>
+		<div class="panelRow">
+		<span class="panelLabel">Password:</span>
+		<span class="panelForm"><input type="password" id="pwd" name="pwd" class="text"/></span>
+		</div>
+		<div style="padding-left:115px;"><input type="Submit" id="submit" value="Login" /></div>
+		<div style="padding-left:5px;padding-top:10px; text-align: right;" class="small">
+		
+		<a href="https://www.myinterfase.com/eureka/studentregistration.aspx" class="underline">Click here to register</a>
+		</div>
+		<div style="padding-left:5px;padding-top:8px; text-align: right;" class="small">
+		<a href="https://www.myinterfase.com/eureka/passwordreset.aspx?ac=274" class="underline">Forgot Password?</a>
+		</div>
+		</div>
+		</div>
+	</form>
+</article>
 
 
 <p class="top"><a href="#top">Top of Page</a></p>
