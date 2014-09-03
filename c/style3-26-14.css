@@ -1472,7 +1472,7 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) {
   .top-nav{display: none;}
   .home-header-logo-inner{min-width: none;}
   .header-main-nav{display: none;}
@@ -1646,7 +1646,7 @@ tweeners.
   .footer-social-icons{text-align: center; display: block !important; }
   .social-icon{padding: 0 10px 0 10px;}
   .footer-copyright{text-align: center; font-size: .7em; color: #ffffff;}
-  .footer-address{width: 100%; text-align: center; font-size: 0.8em; float: right; display: block; clear: both; margin: 1em auto; color: #A6A6A6; }
+  .footer-address{width: 100%; text-align: center; font-size: 0.8em; float: right; display: block; clear: both; margin: 1em auto; }
   .address{ font-style: normal;}
   
 }
@@ -1656,7 +1656,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+@media only screen and (min-width: 768px) {
   .onecol {
     width: 5.801104972%;
   }
@@ -2121,7 +2121,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .footer-top-links ul li:last-child{border: none; padding: 0 20px 0 0;}
   .footer-top-links ul li:first-child{padding: 0 0 0 20px;}
   .footer-top-links ul li a{text-decoration: none; color: #ffffff; font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif; font-size: .8em; text-transform: uppercase;}
-  .footer-top-links ul li a:hover{color: #c4a006; text-decoration: none;}
+  .footer-top-links ul li a:hover{color: #c4a006; text-decoration: underine;}
   .footer-main-container{width: 100%; overflow: hidden; margin: 30px 0 30px 0;}
   .footer-quick-links{min-width: 470px; width: 50%; float: left; overflow: hidden; margin: 25px 0 0 0;}
   .footer-brand-content{float: right; overflow: hidden; margin: 0 30px 0 0;}
@@ -2142,8 +2142,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .footer-social-icons{padding: 0 0 0 20px;}
   .social-icon{padding: 0 20px 0 0;}
   .footer-copyright{font-size: .7em; color: #ffffff; padding: 0 0 0 20px;}
-  .footer-address{float: right; text-align: right; font-size: 0.8em; margin: -3em 4em 2em 0; color: #A6A6A6;}
+  .footer-address{float: right; text-align: right; font-size: 0.8em; margin: -3em 4em 2em 0;}
   .address{ font-style: normal;}
+  
   .footer-links ul li {}
   .mobile-footer-quick-links-title{display: none;}
   
