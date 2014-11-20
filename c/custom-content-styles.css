@@ -452,7 +452,7 @@ figure{
 	
 
 /*===================================GALLERY=================================*/
-
+/*
 	.g-outer-wrap{
 		margin: 0 auto;
 		width: 100%;}
@@ -505,7 +505,7 @@ figure{
 		text-align: center;
 		font-size: 14px;
 		line-height: 24px;
-		/* Only Fx 4 supporting transitions on psuedo elements so far... */
+		/* Only Fx 4 supporting transitions on psuedo elements so far... *!/
 		-webkit-transition: all 0.6s ease;
 		-moz-transition: all 0.6s ease;
 		-o-transition: all 0.6s ease;
@@ -519,13 +519,13 @@ figure{
 		overflow: hidden;}
 		
 	.g li {
-/*		float: left;*/
+/*		float: left;*!/
 		width: 100%;
     	padding: 0 2.5%; }
     	
 	.g img {
-/*		display: block;*/
-		max-width: 100%;}
+/*		display: block;*!/
+		max-width: 100%;}*/
 			
 /*=============2-UP==============================*/
 
@@ -723,6 +723,49 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 
 /*==============END FORM STYLING ======================*/
 
+/***==========================================================================
+
+									ACCORDION STYLING
+
+============================================================================***/
+
+	/*Define Accordion box*/  
+	.accordion {   
+	     width:auto;  
+	     overflow:hidden;   
+	     margin:10px auto;   
+	     color: silver;   
+	     background:silver;   
+	     padding:10px;  }  
+	
+	/*Set style of open slide*/
+	.accordion section:target { background:#fff; padding:10px;}
+	.accordion section:target:hover { background:#FFF; }
+	.accordion section:target h4 {width:100%;	}
+	.accordion section:target h4 a{ color:#990033; padding:0; font-weight: bold;	}
+	.accordion section:target p {display:block;}
+	.accordion section h4 a{padding:8px 10px;display:block; font-size:16px; font-weight:normal;color:#990033; text-decoration:none; }
+	
+	/*set style of closed slide*/
+    .accordion section{ float:left;	overflow:hidden; color:#565656; cursor:pointer; background: #A9A9A9; margin:3px; }
+    .accordion section:hover {background:#D3D3D3;	}
+    .accordion section p { display:none; }
+    .accordion section:after{position:relative;font-size:24px;color:#a9a9a9;font-weight:bold;}
+			
+/*Vertical Accordion *************************************************************************/
+.vertical section{ width:100%; height:40px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;}
+/*Set height of the slide*/
+.vertical :target{ height:auto; width:97%; }
+
+.vertical section h4 { position:relative; left:0; top:-15px; }
+
+
+/*==============END ACCORDION STYLING ======================*/
 
 /***==========================================================================
 
