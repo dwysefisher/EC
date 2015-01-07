@@ -1951,7 +1951,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   #mobile-quick-menu{display: none;}
   /* end .nav */
   #home-inner-content{width: 90%; min-width: 900px; margin: 0 auto 0 auto;}
-  #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: #d7d7d7;}
+  #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: #ffffff;}
   .full-width #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: #ffffff;}
   .full-width #main{width: 100%;}
   #home-main{width: 60%; padding: 20px 40px 40px 40px; background-color: none; color: #ffffff;}
@@ -2039,20 +2039,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   /*******************************************************/
   /*ACCORDION NAV STYLES**********************************/
   /*******************************************************/
+   .dcjq-accordion{border:0 !important;width:80% !important;margin:0 5%;}
+   .widget h4.widgettitle{margin:30px 5% !important;padding:0 !important;}
   .dcjq-accordion ul a{
 	background: none !important; 
-	background-color: #939292 !important;
+	background-color: #ffffff !important;
 	text-transform: none !important;
-	color: #ffffff !important;
-	border-bottom: 3px solid #d7d7d7 !important;
+	color: #939292 !important;
+	border-bottom: 1px solid #d7d7d7 !important;
 	font-size: .9em !important;
 	font-weight: normal !important;
   }
   .dcjq-accordion ul a:hover{
-	background-color: #c4a006 !important;
+	background-color: #990033 !important;
+	color:#ffffff !important;
   }
   .dcjq-accordion ul{
-   background-color: #990033 !important;
+   background-color: #d7d7d7 !important;
+   
   }
   .dcjq-accordion ul.sub-menu a{
 	background: none !important;
@@ -2060,8 +2064,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	padding: 2px 2px 2px 30px !important;
   }
   .dcjq-accordion ul.sub-menu a:hover{
-	text-decoration: underline !important;
-	color: #c4a006 !important;
+	text-decoration: none !important;
+	color: #990033 !important;
   }
   .dcjq-accordion ul.sub-menu li.dcjq-parent-li a{
 	background-color: #8b002a !important;
@@ -2069,6 +2073,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .dcjq-accordion ul.sub-menu li.dcjq-parent-li ul.sub-menu a{
 	padding: 2px 2px 2px 50px !important;
   }
+  .dcjq-accordion ul.sub-menu li.dcjq-parent-li ul.sub-menu a:hover{
+	color: #696969 !important;  }
   
   /*******************************************************/
   /*PAGE NAV STYLES**********************************/
