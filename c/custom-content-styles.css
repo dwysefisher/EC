@@ -24,6 +24,10 @@
 		margin-top: 1.5em;
 	}
 	
+	.one_third_aside img {
+		margin-top: 0.5em !important;
+	}
+	
 	.two_third.last_column {
 	    width: 66% !important;
 	    margin-right: 0px }
@@ -47,10 +51,10 @@
 		font-size:1em;}
 	
 	.first-line {
-		margin-top: 0.5em;}
+		margin-top: 0.5em !important;}
 	
 	.first-paragraph {
-		margin-top: 0.75em;}
+		margin-top: 1.75em !important;}
 	
 	.first-image {
 		margin-top: 1.5em;}
@@ -556,7 +560,8 @@ figure{
 	font-size: 1.2em;
 	font-weight: bold;
 	padding: 10px 8px;
-	color: #990033;}
+	color: #990033;
+	text-align: left;}
 	
 #hor-zebra td {
 	padding: 10px;
