@@ -59,7 +59,6 @@
 	.first-image {
 		margin-top: 1.5em;}
 		
-		
 	.one_third.last_column {
 	    width: 28% !important;
 	    margin-left: 2% !important;
@@ -194,19 +193,18 @@ display: none;
 		border-bottom: 1px dotted !important;			
 	}
 
-.no-underline {
-	text-decoration: none !important; 
-	border-bottom: none !important;
-}
+	.no-underline {
+		text-decoration: none !important; 
+		border-bottom: none !important;
+	}
 
-.hot-links-top {
-	font-size: 0.8em !important;
-}
+	.no-underline li {padding: 1em;}
 
-.extra-space {
-	padding-bottom: 1em;
-	padding-top: 1em;
-}
+	.no-underline a {text-decoration: none !important; border-bottom: none !important;}
+
+.hot-links-top {font-size: 0.8em !important;}
+
+.extra-space {padding-bottom: 1em; padding-top: 1em;}
 
 /* Portal pages styling */
 	.two_third {
@@ -214,34 +212,12 @@ display: none;
 	}
 	
 	/*Sidebar styling */
-	
-/*	#inner-content {
-		background-color: #FFF !important;	}
-	
-	.sidebar {
-		background: #FFF !important;
-		padding-left: 1em;	}
 		
-	.widget {
-		width: 80%;
-		padding-left: 2em;
-		border-right: 0px !important;	}*/
-	
 	/*.dcjq-accordion {
 		border: 0px !important;
 		width: 85% !important;
 	}*/
 	
-/*	#dc_jqaccordion_widget-10-item {
-		border-right: 0px !important;		
-		width: 80%;
-		padding-left: 2em;	}*/
-		
-/*	#dc_jqaccordion_widget-10-item ul a {
-	    color: #a9a9a9 !important;
-	    border-bottom: 1px dotted #CFCFCF !important;}*/
-/*	.dcjq-accordion ul {
-	    background-color: #FFF !important; }*/
 	.dcjq-accordion ul a{
 	border-bottom: 1px dotted #990033 !important;
 	font-size: .8em !important;

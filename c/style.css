@@ -659,7 +659,7 @@ USAGE: .border-radius(4px);
 
 */
 /*********************
-TRANISTION
+TRANSITION
 *********************/
 /* .transition(all,2s); */
 /*********************
@@ -699,7 +699,7 @@ BUTTONS
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #e40f42;
+  background-color: #9900ee; /* #e40f42; */
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f01d4f), to(#e40f42));
   background-image: -webkit-linear-gradient(top, #f01d4f, #e40f42);
   background-image: -moz-linear-gradient(top, #f01d4f, #e40f42);
