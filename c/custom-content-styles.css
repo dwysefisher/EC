@@ -80,8 +80,7 @@
 		 text-decoration: none;
 	}
 	
-	.small-line-height {
-		line-height: 1.5em;}
+	.small-line-height {line-height: 1.5em;}
 	
 	.assistance {
 		 width: 100%;
@@ -99,30 +98,30 @@
 	    border-top: 1px solid rgba(0, 0, 0, 0.1);
 	    border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
 	
-	.top a {
-		float: right;
-		color:#ADADAD !important;
-		text-decoration:none;
-		text-align: right;
-		font-size: x-small;
-		font-weight: 300;
-		padding-bottom: 0.5em;}
+		.top a {
+			float: right;
+			color:#ADADAD !important;
+			text-decoration:none;
+			text-align: right;
+			font-size: x-small;
+			font-weight: 300;
+			padding-bottom: 0.5em;}
 	
-	.top a:hover{
-		color: #ADADAD;
-		text-decoration:none;}
-	
-	.no-bullet ul {
-		list-style: none;
-		text-decoration: none; }
-	
-	.no-bullet li {
-		list-style: none;
-		text-decoration: none !important;}
-	
-	.no-bullet a {
-		text-decoration: underline;
-		line-height: 1.75em; }
+		.top a:hover{
+			color: #ADADAD;
+			text-decoration:none;}
+		
+		.no-bullet ul {
+			list-style: none;
+			text-decoration: none; }
+		
+		.no-bullet li {
+			list-style: none;
+			text-decoration: none !important;}
+		
+		.no-bullet a {
+			text-decoration: underline;
+			line-height: 1.75em; }
 		
 		.social-sidebar {
 			background-color: #FFFFFF; 
@@ -144,18 +143,18 @@
 		}
 		
 		.one-third-student {
-		width: 32% !important;
-		margin-left: 1% !important;
-		float: right;
+			width: 32% !important;
+			margin-left: 1% !important;
+			float: right;
 		}
 
 		.two-third-student {
-		width: 64% !important;
-		margin-right: 1% !important;
-		padding: 0;
-		float: left;
-		font-size: 0.9em;
-		line-height: 200%;	
+			width: 64% !important;
+			margin-right: 1% !important;
+			padding: 0;
+			float: left;
+			font-size: 0.9em;
+			line-height: 200%;	
 		}
 		
 		/* Responsive iFrame for Google Calendar */
@@ -179,37 +178,26 @@
 		}
 		/* END Responsive iFrame */
 
-img#wpstats {
-display: none;
-}
+	img#wpstats {display: none;}
 
-	.underline {
-		text-decoration: none !important; 
-		border-bottom: 1px dotted !important;
-	}
+	.underline {text-decoration: none !important; border-bottom: 1px dotted !important;}
 	
-	ul.underline li a {
-		text-decoration: none !important; 
-		border-bottom: 1px dotted !important;			
-	}
+	ul.underline li a {text-decoration: none !important; border-bottom: 1px dotted !important;}
 
-	.no-underline {
-		text-decoration: none !important; 
-		border-bottom: none !important;
-	}
-
-	.no-underline li {padding: 1em;}
-
+	.no-underline {text-decoration: none !important; border-bottom: none !important;}
+	.no-underline li {padding: 0em;}
 	.no-underline a {text-decoration: none !important; border-bottom: none !important;}
+	.no-underline a:hover {color: #696969;}
 
-.hot-links-top {font-size: 0.8em !important;}
-
-.extra-space {padding-bottom: 1em; padding-top: 1em;}
-
+	.hot-links-top {font-size: 0.8em !important;}
+	
+	.extra-space {padding-bottom: 1em; padding-top: 1em;}
+	.extra-space figure {padding: 1em 0;}
+	
+	.current {font-weight: 700; text-decoration: none;}
+	
 /* Portal pages styling */
-	.two_third {
-		line-height: 175%;
-	}
+	.two_third {line-height: 175%;}
 	
 	/*Sidebar styling */
 		
@@ -350,7 +338,7 @@ display: none;
 .gallery-third a{
 	margin: 0;
 		text-decoration: none;
-		border-bottom: 1px dotted #990033;
+		border-bottom: none;
 		padding: 1em;
 }	
   	
@@ -778,11 +766,6 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 		
 	.g li:nth-child(odd) {
 		clear: none;}
-		
-/*		.gallery-third a {
-			text-decoration: none;
-			border-bottom: 1px dotted #990033;
-		}*/
 		
     figcaption {
     	margin-bottom: 0.5em;}   
