@@ -142,6 +142,16 @@
 			margin-bottom: 0.5em !important;
 		}
 		
+		.cta {
+			margin-top: 1em 0;
+			background-color: #f8f8f8;
+			border: 1px solid #dfdfdf;
+			padding: 1em;
+			width: 100%;
+			max-width: 100%;
+			text-align: center;
+		}
+		
 		.one-third-student {
 			width: 32% !important;
 			margin-left: 1% !important;
@@ -768,7 +778,10 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 		clear: none;}
 		
     figcaption {
-    	margin-bottom: 0.5em;}   
+    	margin-bottom: 0.5em;} 
+    	
+  .extra-space figure {padding: em 0; margin: 0 auto;}
+    	  
     
     .assistance {
     	display: none;
