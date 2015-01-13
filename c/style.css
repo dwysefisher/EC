@@ -216,9 +216,7 @@ q:after {
   content: '';
   content: none;
 }
-small {
-  font-size: 75%;
-}
+
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  * gist.github.com/413930
