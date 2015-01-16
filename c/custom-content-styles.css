@@ -849,13 +849,13 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
     	white-space: nowrap;
     }
     
-    /*
+/*    /*
     	Label the data
-    	*/
+    	*!/
     	td:nth-of-type(1):before { content: "Dates"; }
     	td:nth-of-type(2):before { content: "New Students"; }
     	td:nth-of-type(3):before { content: "Returning Students"; }
-    	td:nth-of-type(4):before { content: "Details"; }
+    	td:nth-of-type(4):before { content: "Details"; }*/
     
 }
 
