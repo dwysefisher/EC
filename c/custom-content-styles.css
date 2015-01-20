@@ -179,7 +179,7 @@
 		 
 		.responsive-iframe-container {
 		    position: relative;
-		    padding-bottom: 56.25%;
+		    padding-bottom: 75%; /* 56.25% is original */
 		    padding-top: 30px;
 		    height: 0;
 		    overflow: hidden;
@@ -191,8 +191,8 @@
 		    position: absolute;
 		    top: 0;
 		    left: 0;
-		    width: 100%;
-		    height: auto;
+		    width: 100% !important;
+		    height: 100% !important;
 		}
 		/* END Responsive iFrame */
 
