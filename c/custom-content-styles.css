@@ -441,7 +441,7 @@ figure{
 			
 /*=============2-UP==============================*/
 
-@media only screen and (min-width: 31em) {
+/*@media only screen and (min-width: 31em) {
 	.g li{
 		width: 45%;
 		padding: 0 2.5%;
@@ -449,12 +449,12 @@ figure{
 	
 	.g li:nth-of-type(odd){
 		clear: left;}
-}
+}*/
 
 
 /*==================3-UP===========================*/
 
-@media screen and (min-width: 40em) {
+/*@media screen and (min-width: 40em) {
 		.g li {
 	    	width: 33.33333333333%;
     		padding: 0 2.5%; 
@@ -465,7 +465,7 @@ figure{
 	  	.g li:nth-child(2n+1) {
 			clear: none;
 		}
-	}
+	}*/
 
 /*================END GALLERY===============================*/
 
@@ -775,7 +775,7 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
       margin-bottom: 0.25em;
 	}  
       
-    .gallery-fourth li:nth-child(odd){
+/*    .gallery-fourth li:nth-child(odd){
     	clear: left;
     } 
         
@@ -783,14 +783,13 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 		clear: left;}
 		
 	.g li:nth-child(odd) {
-		clear: none;}
+		clear: none;}*/
 		
     figcaption {
     	margin-bottom: 0.5em;} 
     	
   .extra-space figure {padding: em 0; margin: 0 auto;}
     	  
-    
     .assistance {
     	display: none;
     	padding: 0.5em;
@@ -849,13 +848,14 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
     	white-space: nowrap;
     }
     
-/*    /*
+  /*
     	Label the data
     	*!/
     	td:nth-of-type(1):before { content: "Dates"; }
     	td:nth-of-type(2):before { content: "New Students"; }
     	td:nth-of-type(3):before { content: "Returning Students"; }
-    	td:nth-of-type(4):before { content: "Details"; }*/
+    	td:nth-of-type(4):before { content: "Details"; }
+   */
     
 }
 
