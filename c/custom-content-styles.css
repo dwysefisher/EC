@@ -72,19 +72,7 @@
 	    float: left;}
 
 	#main ul a {text-decoration: none; border-bottom: 1px dotted #990033;	}
-	
-	.bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
-	.bulleted-list li {margin-bottom: 0.5em;}
 		
-	.body-list li {
-		 padding-left: 1.5em;
-		 text-indent: -1em;
-		 line-height: 2em;
-		 margin-bottom: 0.5em;
-		 text-decoration: none;
-		 list-style-position: outside;
-	}
-	
 	.small-line-height {line-height: 1.5em;}
 	
 	.assistance {
@@ -116,19 +104,6 @@
 			color: #ADADAD;
 			text-decoration:none;}
 		
-		.no-bullet ul {
-			list-style: none;
-			text-decoration: none; }
-		
-		.no-bullet li {
-			list-style: none;
-			text-decoration: none !important;}
-		
-		.no-bullet a {
-			text-decoration: none;
-			border-bottom: 1px dotted #990033;
-			line-height: 1.75em; }
-		
 		.social-sidebar {
 			background-color: #FFFFFF; 
 			padding:1.5em; 
@@ -156,10 +131,6 @@
 			text-align: right;
 		}
 		
-		.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;<}
-			
-		.stacked-list a {text-decoration:none;}
-				
 		.one-third-student {
 			width: 32% !important;
 			margin-left: 1% !important;
@@ -304,21 +275,36 @@
 
 ==================================================================================*/		
 
-.footer-address a{
-	text-decoration:none !important;	border-bottom: 1px dotted #c4a006 !important;
-	color: #A6A6A6 !important;
-}
+.footer-address a{text-decoration:none !important;	border-bottom: 1px dotted #c4a006 !important; color: #A6A6A6 !important; }
 
-.learn-serve-lead-content {
-	color: #A6A6A6;
-	line-height: 150% !important;
-}
+.learn-serve-lead-content {color: #A6A6A6; line-height: 150% !important;}
 
 /*================================================================================
 
 															END FOOTER STYLING
 
 ==================================================================================*/		
+/*================================================================================
+
+															LIST STYLING
+
+==================================================================================*/
+	.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;<}
+	.stacked-list a {text-decoration:none;}
+	
+	.inline-list li {display:inline;}
+	.inline-list li a {text-decoration: none !important; border-bottom: none !important; list-style: none;}
+	
+	.no-bullet ul {list-style: none; text-decoration: none; }
+	.no-bullet li {list-style: none; text-decoration: none !important;}
+	.no-bullet a {text-decoration: none; border-bottom: 1px dotted #990033; line-height: 1.75em; }
+	
+	.bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
+	.bulleted-list li {margin-bottom: 0.5em;}
+		
+	.body-list li {padding-left: 1.5em; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: outside;}
+
+/* END LIST STYLING */
 
 /*================================================================================
 
