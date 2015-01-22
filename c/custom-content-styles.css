@@ -190,10 +190,10 @@
 	
 	/*Sidebar styling */
 		
-	/*.dcjq-accordion {
-		border: 0px !important;
-		width: 85% !important;
-	}*/
+	.dcjq-accordion {
+/*		border: 0px !important;
+		width: 85% !important;*/
+		font-size: 0.9rem;}
 	
 	.dcjq-accordion ul a{
 	border-bottom: 1px dotted #990033 !important;
