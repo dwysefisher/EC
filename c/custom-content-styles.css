@@ -93,12 +93,13 @@
 	
 		.top a {
 			float: right;
-			color:#ADADAD !important;
+			color:#lime !important;
 			text-decoration:none;
 			text-align: right;
 			font-size: x-small;
 			font-weight: 300;
-			padding-bottom: 0.5em;}
+			padding-bottom: 0.5em;
+			border-bottom: none !important;}
 	
 		.top a:hover{
 			color: #ADADAD;
@@ -286,10 +287,10 @@
 ==================================================================================*/		
 /*================================================================================
 
-															LIST STYLING
+															LIST STYLING / LISTS
 
 ==================================================================================*/
-	.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;<}
+	.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;}
 	.stacked-list a {text-decoration:none;}
 	
 	.inline-list li {display:inline;}
