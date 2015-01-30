@@ -2179,6 +2179,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     filter: none !important;
     -ms-filter: none !important;
   }
+  
+  @page  {margin: 0.5cm; size: letter;}
+  
   a,
   a:visited,
   a:link {
@@ -2215,9 +2218,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   }
   img {
     max-width: 100% !important;
-  }
-  @page  {
-    margin: 0.5cm;
   }
   p,
   h2,
