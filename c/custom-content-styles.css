@@ -238,6 +238,8 @@
           user-select: none;
 }
 
+.btn a {text-decoration: none !important; border-bottom: none !important;}
+
 .btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -264,6 +266,16 @@
   border: 1px solid;
   border-color: #a9a9a9;
   background: #C0C0C0;
+}
+
+.panel {
+	border-style: solid !important; 
+	border-width: 1px;
+	border-color: #d8d8d8; 
+	border-radius:3px; 
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background: #f2f2f2;
 }
 
 	.display-large {display: inline-block !important; }
