@@ -544,21 +544,13 @@ figure{
 	color: #990033;
 	text-align: left;}
 	
-#hor-zebra td {
-	padding: 10px;
-/*	color: #565656;*/
-  	vertical-align: top;}
+#hor-zebra td {padding: 10px; /*	color: #565656;*/	vertical-align: top;}
   	
-#hor-zebra .odd {
-	background: #DCDCDC; }
+#hor-zebra .odd {background: #DCDCDC; }
 	
-#hor-zebra tbody tr:hover td {
-	color: #636363;
-/*	background: #DCDCDC;*/}
+#hor-zebra tbody tr:hover td {color: #636363; /*	background: #DCDCDC;*/}
 
-.data-table {
-	border: none;
-}
+.data-table {border: none; margin:1em 0;}
 
 .data-table > tbody > tr > td {
 	border-bottom: 1px solid #DCDCDC;
@@ -577,8 +569,7 @@ figure{
   	border-bottom: 2px solid #dddddd;
 	background: #D3D3D3;}
 	
-.details-column{
-	width: 60%;}
+.details-column{width: 60%;}
 
 .resident{
 	/*  background-color:#DAA520;*/
