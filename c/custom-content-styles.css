@@ -20,13 +20,9 @@
 	    text-align: right;
 	    padding-right: 1em;}
 	
-	.one_third_aside {
-		margin-top: 1.5em;
-	}
+	.one_third_aside {margin-top: 1.5em;}
 	
-	.one_third_aside img {
-		margin-top: 0.5em !important;
-	}
+	.one_third_aside img {margin-top: 0.5em !important;}
 	
 	.two_third.last_column {
 	    width: 66% !important;
@@ -861,3 +857,9 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 }
 
 //**==================================END MOBILE STYLING===================================**//
+
+//**=======================LARGE DISPLAY STYLING===============**//
+@media (min-width: 1300px){
+	.home-header-hero {width: 1000px !important; max-width: 90% !important; background-color: #2e2e2e !important;}
+}
+//**=======================END LARGE DISPLAY STYLING===============**//
