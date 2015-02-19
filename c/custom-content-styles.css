@@ -311,7 +311,7 @@
 	.bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
 	.bulleted-list li {margin-bottom: 0.5em;}
 		
-	.body-list li {padding-left: 1.5em; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: outside;}
+	.body-list li {padding-left: 1.5em; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
 
 /* END LIST STYLING */
 

@@ -765,6 +765,9 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1681c4, #1990db);
   background-image: linear-gradient(to bottom, #1681c4, #1990db);
 }
+
+.button,
+.btn a {border-bottom: none !important;}
 /*
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
