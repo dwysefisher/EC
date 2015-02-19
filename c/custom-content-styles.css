@@ -76,11 +76,9 @@
 		 background-color: #D3D3D3; 
 		 padding:0.5em 2em;}
 		 
-	.aside-pullquote{
-		font-size: 1.5em; 
-		line-height: 2em;
-		margin-bottom: 0;}
+	.aside-pullquote {font-size: 1.5em; line-height: 2em;margin-bottom: 0;}
 	
+	hr, 
 	.hr-style {
 	    border: 0;
 	    height: 0;
@@ -271,8 +269,9 @@
 	border-radius:3px; 
 	margin-bottom: 1rem;
 	padding: 1rem;
+	paddding-bottom: 0 !important;
 	background: #f2f2f2;
-}
+	}
 
 	.display-large {display: inline-block !important; }
   .display-large.stacked-list.btn { max-width: 75%; display: block !important; margin-bottom: 0.5em; padding: 1em; float: right;	}
@@ -311,7 +310,8 @@
 	.bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
 	.bulleted-list li {margin-bottom: 0.5em;}
 		
-	.body-list li {padding-left: 1.5em; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
+	.body-list {padding-left: 2.5em !important; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
+	.body-list li {margin-bottom: 0.5em;	}
 
 /* END LIST STYLING */
 
