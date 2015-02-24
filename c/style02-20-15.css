@@ -765,6 +765,9 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1681c4, #1990db);
   background-image: linear-gradient(to bottom, #1681c4, #1990db);
 }
+
+.button,
+.btn a {border-bottom: none !important;}
 /*
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -1489,7 +1492,6 @@ tweeners.
   .mobile-search-btn{display: block; margin: 5px 0 0 12px; float: left;}
   .home-header-hero{width: 100%; min-width: 100%;}
   .cycle-slideshow{
-	margin:0;
 	width: 100%;
 	height: auto;
 	box-shadow: inset 0 4px 4px #303030;
@@ -1815,9 +1817,7 @@ you can add resource intensive styles.
   .home-header-logo-inner{width: 90%; min-width: 900px; margin: 0 auto 0 auto;}
   .mobile-menu-search-btns{display: none;}
   .home-header-hero{position: relative; z-index: 1; margin: -176px auto -52px auto; width: 100%; min-width: 900px; max-height: 454px; overflow:hidden;}
-  .cycle-slideshow img{ width: 90%; margin:0 5%; height: auto;}
-  @media only screen and (max-width: 1300px) {
-  .cycle-slideshow img{ width: 100%; margin:0;}}
+  .cycle-slideshow img{display: block; width: 100%; height: auto;}
   .slide-show-info{
   position: relative;
   z-index: 6000;
@@ -2127,7 +2127,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   /*********************
   FOOTER STYLES
   *********************/
-  .footer{clear:both;width: 100%;background-color: #303030;}
+  .footer{width: 100%;}
   #inner-footer{width: 90%; min-width: 900px; margin: 0 auto 0 auto; background-color: #303030;}
   .footer-top-links ul{display: block; list-style: none; width: 100%; overflow: hidden;}
   .footer-top-links ul li{display: block; width: 16.6%; float: left; text-align: center; border-right: 1px solid #ffffff;}
@@ -2260,5 +2260,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   }
   
 }
-.accordion-title{display:block;padding:5px 15px;border:2px solid #cccccc;cursor:pointer;}
-.accordion-content{display:block;margin:0;padding:5px 15px;border:2px solid #cccccc;}
