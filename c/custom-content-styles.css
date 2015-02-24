@@ -628,21 +628,21 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 
 ============================================================================***/
 		.accordion {
-		    border-bottom: 1px solid #dbdbdb;
 		    margin-bottom: 20px;
 		}
 		.accordion-title {
-		    border-top: 1px solid #dbdbdb;
+		    position: relative;
+		    padding: 1em 1.5em;
+		    border-top: 1px solid #ccc;
 		    margin: 0;
 		    padding: 20px 0;
 		    cursor: pointer;
 		}
 		
-		.accordion-title:hover {}
+		.accordion-title:hover {background-color: #ccc;}
 		.accordion-title:first-child {border: none;}
 		.accordion-title.open {cursor: default;}
-		.accordion-content {padding-bottom: 20px;}
-		.accordion-title {position:  relative;}
+		.accordion-content {padding-bottom: 20px; border: 1px solid #ccc !important;	}
 		.accordion-title:after {
 			position: absolute;
 			font-family: FontAwesome;
