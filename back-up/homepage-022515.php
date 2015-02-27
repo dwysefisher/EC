@@ -124,13 +124,13 @@ Template Name: Homepage Template
 									<a href="/events/" title="Homecoming 2014"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tickets-btn.png" border="0" style="background-color:#990033 !important;" alt="Events &amp; Ticketing" /></a>
 								</div>
 								<div class="homepage-lower-links-column-two">
-									<a href="/giving/give-now/" title="Give Now"><img src="<?php echo get_template_directory_uri(); ?>/library/images/give-now200px-btn.png" border="0" alt="Give Now" /></a>
-								</div>
-								<div class="homepage-lower-links-column-three">
 									<a href="/admissions/apply-now/" title="Apply Today"><img src="<?php echo get_template_directory_uri(); ?>/library/images/apply225px-btn.png" border="0" alt="Apply Today" /></a>
 								</div>
+								<div class="homepage-lower-links-column-three">
+									<a href="/alumni/run-with-reagan/" target="_blank" title="Run with Reagan"><img src="<?php echo get_template_directory_uri(); ?>/library/images/run-with-reagan-btn.png" border="0" alt="Run with Reagan" /></a>
+								</div>
 								<div class="homepage-lower-links-column-four">
-									<a href="http://reagan.eureka.edu/society/" target="_blank" title="The Reagan Society"><img src="<?php echo get_template_directory_uri(); ?>/library/images/reagan200px-btn.png" border="0" alt="The Reagan Society" /></a>
+									<a href="/giving/give-now/" title="Give Now"><img src="<?php echo get_template_directory_uri(); ?>/library/images/give-now200px-btn.png" border="0" alt="Give Now" /></a>
 								</div>
 								<div class="homepage-lower-links-column-five">
 									<a href="/arts/" title="Arts at Eureka"><img src="<?php echo get_template_directory_uri(); ?>/library/images/arts-btn.png" border="0" alt="Arts at Eureka" /></a>
