@@ -1475,7 +1475,6 @@ tweeners.
   #content{background-color: #ffffff; box-shadow: none; -moz-box-shadow: none; margin: 0; padding: 0;}
   .wrap{width: 100%;}
   .inner-content{margin: 0; padding: 0;}
-  .cycle-slideshow img{z-index: 100; width: 100%; height: auto;}
   
    /********************************/
   /**MOBILE NAVIGATION STYLES***************/
@@ -1768,17 +1767,22 @@ you can add resource intensive styles.
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#03000000',GradientType=0 ); /* IE6-9 */
 }
   .home-header-logo-inner{width: 90%; min-width: 900px; margin: 0 auto 0 auto;}
+  @media only screen and (min-width:1300px){
+	  .home-header-logo-inner{max-width:1200px;}
+  }
   .mobile-menu-search-btns{display: none;}
-  .home-header-hero{position: relative; z-index: 1; margin: -176px auto -52px auto; width: 100%; min-width: 900px; max-height: 454px; overflow:hidden;}
-  .cycle-slideshow img{ width: 90%; margin:0 5%; height: auto;}
-  @media only screen and (max-width: 1300px) {
-  .cycle-slideshow img{ width: 100%; margin:0;}}
+  .home-header-hero{position: relative; z-index: 1; margin:-176px auto -52px auto; width: 100%; min-width: 900px; max-height: 454px; overflow:hidden;}
+  .cycle-slideshow{width:100%;display:block;margin:0px auto !important;}
+  .cycle-slideshow img{width:100%;height:auto;}
+  @media only screen and (min-width:1300px){
+	.cycle-slideshow{max-width:1300px;}
+	}
   .slide-show-info{
   position: relative;
   z-index: 6000;
   height: 90px;
   min-width: 900px;
-  width: 90%;
+  width: 100%;
   margin: -120px auto 0 auto;
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.6) 93%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(85%,rgba(0,0,0,0.6)), color-stop(93%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
@@ -1789,6 +1793,9 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 85%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 
   }
+   @media only screen and (min-width:1300px){
+	  .slide-show-info{max-width:1300px;}
+   }
   .slide-title-container{width: 90%; overflow: hidden;}
   .slide-title{width: 100%; height: 40px; margin: 10px 0 0 0; padding: 10px 10px 0 0; text-align: right; color: #ffffff; font-size: 2em; font-family: 'Bitter', serif;}
   .slide-title .cursive{font-family: "bickham-script-pro", cursive; font-size: 2.4em; font-weight: 700;}
@@ -1809,7 +1816,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   /*********************
   NAVIGATION STYLES
   *********************/
-  .header-main-nav{position: relative; z-index: 199; width: 90%; min-width: 900px; margin: 0 auto -14px auto; background-color: #c4a006;}
+  .header-main-nav{position: relative; z-index: 199; width: 100%; min-width: 900px; margin: 0 auto -14px auto; background-color: #c4a006;}
+  @media only screen and (min-width:1300px){
+	  .header-main-nav{max-width:1300px;}
+  }
   .header-main-nav ul{display: block; width: 100%; overflow:hidden; background-color: #c4a006; margin:0; padding: 0;}
   .header-main-nav ul li{display: block; width: 16.6%; float: left; border-right: 2px solid #b49304;}
   .header-main-nav ul li:last-child{border: none;}
