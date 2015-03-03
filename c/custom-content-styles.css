@@ -11,9 +11,6 @@
 	  margin: 1.67em 0;
 	  color: #990033;}
 	
-	body .gform_wrapper .gform_body .gform_fields .gfield textarea {
-	    font-size:1.2em;}
-	
 	.one_third {
 	    width: 32% !important;
 	    margin-right: 2% !important;
@@ -204,11 +201,11 @@
 	color: #c4a006 !important;
 	/*border-bottom: 1px dotted #990033 !important;*!/	}*/
 
-/*================================================================================
+/*=========================================================================
 
 								BUTTON & ALERTS STYLING
 
-==================================================================================*/
+==========================================================================*/
 		 
 .btn {
   display: inline-block;
@@ -273,55 +270,54 @@
 	background: #f2f2f2;
 	}
 	
-	.alert {
-	  margin: 10px;
-	  padding: 5px 18px;
-	  border: 1px solid;
-	  border-radius: 4px;
-	}
-	.alert-help {
-	  margin: 10px;
-	  padding: 5px 18px;
-	  border: 1px solid;
-	  border-color: #e8dc59;
-	  background: #ebe16f;
-	}
-	.alert-info {
-	  margin: 10px;
-	  padding: 5px 18px;
-	  border: 1px solid;
-	  color: #cc9900;
-	  background-color: #FFFFBF;
-	  border-color: #cc9900;
-	  max-width: 100% !important;
-	}
-	.alert-error {
-	  margin: 10px;
-	  padding: 5px 18px;
-	  border: 1px solid;
-	  border-color: #f8cdce;
-	  background: #fbe3e4;
-	}
-	.alert-success {
-	  margin: 10px;
-	  padding: 5px 18px;
-	  border: 1px solid;
-	  border-color: #cdcdcd;
-	  background: #dfffdf;
-	  border-radius: 0.5em;
-	}
-	
-	.alert-event-help {
-	  margin: 10px;
-	  padding: 5px 18px;
-	  border: 1px solid;
-	  border-color: #a9a9a9;
-	  background: #C0C0C0;
-	}
+.alert {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.alert-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+.alert-info {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  color: #cc9900;
+  background-color: #FFFFBF;
+  border-color: #cc9900;
+  max-width: 100% !important;
+}
+.alert-error {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+.alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #cdcdcd;
+  background: #dfffdf;
+}
 
-	.display-large {display: inline-block !important; }
-  .display-large.stacked-list.btn { max-width: 75%; display: block !important; margin-bottom: 0.5em; padding: 1em; float: right;	}
-	.display-small {display: none !important; }
+.alert-event-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #a9a9a9;
+  background: #C0C0C0;
+}
+
+.display-large {display: inline-block !important; }
+.display-large.stacked-list.btn { max-width: 75%; display: block !important; margin-bottom: 0.5em; padding: 1em; float: right;	}
+.display-small {display: none !important; }
 
 /*=====================================================================
 
@@ -343,21 +339,21 @@
 															LIST STYLING / LISTS
 
 ============================================================================*/
-	.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;}
-	.stacked-list a {text-decoration:none;}
+.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;}
+.stacked-list a {text-decoration:none;}
+
+.inline-list li {display:inline;}
+.inline-list li a {text-decoration: none !important; border-bottom: none !important; list-style: none;}
+
+.no-bullet ul {list-style: none; text-decoration: none; }
+.no-bullet li {list-style: none; text-decoration: none !important;}
+.no-bullet a {text-decoration: none; border-bottom: 1px dotted #990033; line-height: 1.75em; }
+
+.bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
+.bulleted-list li {margin-bottom: 0.5em;}
 	
-	.inline-list li {display:inline;}
-	.inline-list li a {text-decoration: none !important; border-bottom: none !important; list-style: none;}
-	
-	.no-bullet ul {list-style: none; text-decoration: none; }
-	.no-bullet li {list-style: none; text-decoration: none !important;}
-	.no-bullet a {text-decoration: none; border-bottom: 1px dotted #990033; line-height: 1.75em; }
-	
-	.bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
-	.bulleted-list li {margin-bottom: 0.5em;}
-		
-	.body-list {padding-left: 2.5em !important; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
-	.body-list li {margin-bottom: 0.5em;	}
+.body-list {padding-left: 2.5em !important; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
+.body-list li {margin-bottom: 0.5em;	}
 
 /* END LIST STYLING */
 
@@ -480,34 +476,6 @@ figure{
 	margin: 0;
 }	
 			
-/*=============2-UP==============================*/
-
-/*@media only screen and (min-width: 31em) {
-	.g li{
-		width: 45%;
-		padding: 0 2.5%;
-		float: left;}
-	
-	.g li:nth-of-type(odd){
-		clear: left;}
-}*/
-
-
-/*==================3-UP===========================*/
-
-/*@media screen and (min-width: 40em) {
-		.g li {
-	    	width: 33.33333333333%;
-    		padding: 0 2.5%; 
-	  	}
-	  	.g li:nth-child(2n+1) {
-	  		clear: left;
-	  	}
-	  	.g li:nth-child(2n+1) {
-			clear: none;
-		}
-	}*/
-
 /*================END GALLERY===============================*/
 
 /* ========================= BIO & PIC LAYOUT =========================== */
@@ -655,9 +623,22 @@ div.panelRow span.panelLabel {float: left;width: 115px; text-align: right;font-s
 div.panelRow span.panelForm {float: left;width: 150px;text-align: right; padding-bottom: 15px; }
 div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif; }
 
-.gform_wrapper ul li.gfield {
-   padding-bottom:20px;
+.gform_wrapper ul li.gfield {padding-bottom:20px;}
+
+body .gform_wrapper {}
+
+body .gform_wrapper .gform_body {font-size: 75%;}
+
+body .gform_wrapper .gform_body .gform_fields .gfield textarea {
+    font-size:1.2em;
+    font-family: 'Open Sans', Geneva, helvetica, sans-serif;
 }
+
+body .gform_wrapper .gform_body .gform_fields .gfield select {background-color: #a6a6a6;}
+
+body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+	font-family: 'Open Sans', Geneva, helvetica, sans-serif;
+ }
 
 .gform_footer input[type="submit"] {
 	background: #990033 !important;
