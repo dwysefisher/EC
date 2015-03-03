@@ -625,20 +625,17 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 
 .gform_wrapper ul li.gfield {padding-bottom:20px;}
 
-body .gform_wrapper {}
+body .gform_wrapper {font-family:inherit !important;}
 
 body .gform_wrapper .gform_body {font-size: 75%;}
 
 body .gform_wrapper .gform_body .gform_fields .gfield textarea {
-    font-size:1.2em;
-    font-family: 'Open Sans', Geneva, helvetica, sans-serif;
-}
+    font-size:1.2em; font-family: 'Open Sans', Geneva, helvetica, sans-serif;}
 
 body .gform_wrapper .gform_body .gform_fields .gfield select {background-color: #F8F8FF;}
 
 body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
-	font-family: 'Open Sans', Geneva, helvetica, sans-serif;
- }
+	font-family: 'Open Sans', Geneva, helvetica, sans-serif;}
 
 .gform_footer input[type="submit"] {
 	background: #990033 !important;
@@ -651,6 +648,11 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 	border-bottom: none;
 	text-decoration: none;
 }
+
+.gform_wrapper .gf_page_steps { font-family: 'Open Sans', Geneva, sans-serif;
+	font-size: 75%; border-bottom: none;}
+
+.gf_step .gf_step_active {color: #990033;}	
 
 /*==============END FORM STYLING ======================*/
 
@@ -900,7 +902,7 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 //**====================END MOBILE STYLING============================**//
 
 //**=======================LARGE DISPLAY STYLING===============**//
-@media (min-width: 1300px){
+/*@media (min-width: 1300px){
 	.home-header-hero {width: 1000px !important; max-width: 90% !important; background-color: #2e2e2e !important;}
-}
+}*/
 //**=======================END LARGE DISPLAY STYLING===============**//
