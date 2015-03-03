@@ -1777,7 +1777,7 @@ you can add resource intensive styles.
 	  .home-header-logo-inner{max-width:1200px;}
   }
   .mobile-menu-search-btns{display: none;}
-  .home-header-hero{position: relative; z-index: 1; margin:-176px auto -52px auto; width: 100%; min-width: 900px; max-height: 454px; overflow:hidden;}
+  .home-header-hero{position: relative; z-index: 1; margin:-176px auto -52px auto; width: 100%; min-width: 900px; max-height: 454px; overflow:hidden; background-color: #303030;	}
   .cycle-slideshow{width:100%;display:block;margin:0px auto !important;}
   .cycle-slideshow img{width:100%;height:auto;}
   @media only screen and (min-width:1300px){
