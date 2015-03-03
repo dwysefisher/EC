@@ -10,9 +10,9 @@ and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
 /*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
-/* ==========================================================================
+/* =========================================================================
    HTML5 display definitions
-   ========================================================================== */
+   ========================================================================= */
 /*
  * Corrects `block` display not defined in IE6/7/8/9 & FF3.
  */
@@ -82,7 +82,7 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /*
  * Addresses margins handled incorrectly in IE6/7.
@@ -863,7 +863,7 @@ h5,
 .h5 {
   font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 700;
+  font-weight: 600;
   /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -885,12 +885,14 @@ h5 a,
   text-decoration: none;
 }
 h1,
-.h1 {
+.h1,
+.alpha {
   font-size: 2em;
   line-height: 1.125em;
 }
 h2,
-.h2 {
+.h2,
+.beta {
   font-size: 1.8em;
   line-height: 1.25em;
   margin-bottom: 0.375em;
@@ -898,23 +900,27 @@ h2,
 /*  letter-spacing: 0.075em;*/
 }
 h3,
-.h3 {
+.h3,
+.gamma {
   font-size: 1.6em;
   font-weight: 600;
 }
 h4,
-.h4 {
+.h4,
+.delta {
   font-size: 1.25em;
   font-weight: 600;
 }
 h5,
-.h5 {
+.h5,
+.epsilon {
   font-size: 1.25em;
   font-weight: 400;
-  font-style: italic;
+  text-transform: uppercase;
 }
 h6,
-.h6{
+.h6, 
+.zeta {
   font-size: 1em;
   font-weight: 400;
 }
@@ -1945,9 +1951,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	background-color: #cc9900 !important;
 }
 
-
-
-  
   /*********************
   SIDEBARS & ASIDES
   *********************/
