@@ -272,31 +272,77 @@
 	paddding-bottom: 0 !important;
 	background: #f2f2f2;
 	}
+	
+	.alert {
+	  margin: 10px;
+	  padding: 5px 18px;
+	  border: 1px solid;
+	  border-radius: 4px;
+	}
+	.alert-help {
+	  margin: 10px;
+	  padding: 5px 18px;
+	  border: 1px solid;
+	  border-color: #e8dc59;
+	  background: #ebe16f;
+	}
+	.alert-info {
+	  margin: 10px;
+	  padding: 5px 18px;
+	  border: 1px solid;
+	  color: #cc9900;
+	  background-color: #FFFFBF;
+	  border-color: #cc9900;
+	  max-width: 100% !important;
+	}
+	.alert-error {
+	  margin: 10px;
+	  padding: 5px 18px;
+	  border: 1px solid;
+	  border-color: #f8cdce;
+	  background: #fbe3e4;
+	}
+	.alert-success {
+	  margin: 10px;
+	  padding: 5px 18px;
+	  border: 1px solid;
+	  border-color: #cdcdcd;
+	  background: #dfffdf;
+	  border-radius: 0.5em;
+	}
+	
+	.alert-event-help {
+	  margin: 10px;
+	  padding: 5px 18px;
+	  border: 1px solid;
+	  border-color: #a9a9a9;
+	  background: #C0C0C0;
+	}
 
 	.display-large {display: inline-block !important; }
   .display-large.stacked-list.btn { max-width: 75%; display: block !important; margin-bottom: 0.5em; padding: 1em; float: right;	}
 	.display-small {display: none !important; }
 
-/*================================================================================
+/*=====================================================================
 
 															FOOTER STYLING
 
-==================================================================================*/		
+=======================================================================*/		
 
 .footer-address a{text-decoration:none !important;	border-bottom: 1px dotted #c4a006 !important; color: #A6A6A6 !important; }
 
 .learn-serve-lead-content {color: #A6A6A6; line-height: 150% !important;}
 
-/*================================================================================
+/*=========================================================================
 
 															END FOOTER STYLING
 
-==================================================================================*/		
-/*================================================================================
+===========================================================================*/		
+/*==========================================================================
 
 															LIST STYLING / LISTS
 
-==================================================================================*/
+============================================================================*/
 	.stacked-list > li {display: block;	margin-right: 0em;	padding-right: 0em;}
 	.stacked-list a {text-decoration:none;}
 	
@@ -315,11 +361,11 @@
 
 /* END LIST STYLING */
 
-/*================================================================================
+/*==========================================================================
 
 													IMAGES AND MEDIA STYLING
 
-==================================================================================*/		 
+===========================================================================*/		 
 
 .gallery {
 	overflow: hidden;
@@ -464,7 +510,7 @@ figure{
 
 /*================END GALLERY===============================*/
 
-/* ================================= BIO & PIC LAYOUT =================================== */
+/* ========================= BIO & PIC LAYOUT =========================== */
 
 	.caption {
 	  text-align:center;}
@@ -514,15 +560,15 @@ figure{
 	  height: 0;
 	  clear: both; }
   
-/* ================================= END BIO & PIC LAYOUT =================================== */
+/* ====================== END BIO & PIC LAYOUT ========================== */
   
 
 
-//**================================END IMAGES AND MEDIA STYLING=============================**//
+//**================END IMAGES AND MEDIA STYLING=====================**//
 
 
 
-//**=========================ZEBRA & TABLE LAYOUT==========================**//
+//**=======================ZEBRA & TABLE LAYOUT==========================**//
 
 #hor-zebra {
 	font-family: "Open Sans", Sans-Serif;
@@ -661,7 +707,7 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 
 									MOBILE STYLING
 
-============================================================================***/
+==========================================================================***/
 
 @media only screen and (max-width: 480px) {
    /* Smartphone view: 1 tile */
@@ -865,7 +911,7 @@ div.panelRow input.text {font-family: 'Open Sans', Geneva, helvetica, sans-serif
 	}
 }
 
-//**==================================END MOBILE STYLING===================================**//
+//**====================END MOBILE STYLING============================**//
 
 //**=======================LARGE DISPLAY STYLING===============**//
 @media (min-width: 1300px){
