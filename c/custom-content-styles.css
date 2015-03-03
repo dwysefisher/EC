@@ -634,7 +634,7 @@ body .gform_wrapper .gform_body .gform_fields .gfield textarea {
     font-family: 'Open Sans', Geneva, helvetica, sans-serif;
 }
 
-body .gform_wrapper .gform_body .gform_fields .gfield select {background-color: #a6a6a6;}
+body .gform_wrapper .gform_body .gform_fields .gfield select {background-color: #F8F8FF;}
 
 body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 	font-family: 'Open Sans', Geneva, helvetica, sans-serif;
@@ -645,6 +645,11 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 	cursor: pointer;
 	font-family: 'Open Sans', Geneva, helvetica, sans-serif;
 	border: 1px solid #990033;
+}
+
+.gform_footer input[type="submit"] a {
+	border-bottom: none;
+	text-decoration: none;
 }
 
 /*==============END FORM STYLING ======================*/
