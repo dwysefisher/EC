@@ -26,7 +26,7 @@
 	    margin-right: 0px }
 	
 	.two_third.last_column p {
-		line-height: 2em;
+		line-height: 200%;
 		font-size:1em;}
 	
 	.one_fourth {
@@ -40,7 +40,7 @@
 	    margin-right: 0px !important;}
 	
 	.three_fourth.last_column p {
-		line-height: 2em;
+		line-height: 200%;
 		font-size:1em;}
 		
 	.dateline {width:75%; float:right; color:#a9a9a9; font-weight: 600;	}		
@@ -66,14 +66,14 @@
 
 	#main ul a {text-decoration: none; border-bottom: 1px dotted #990033;	}
 		
-	.small-line-height {line-height: 1.5em;}
+	.small-line-height {line-height: 150%;}
 	
 	.assistance {
 		 width: 100%;
 		 background-color: #D3D3D3; 
 		 padding:0.5em 2em;}
 		 
-	.aside-pullquote {font-size: 1.5em; line-height: 2em;margin-bottom: 0;}
+	.aside-pullquote {font-size: 1.5em; line-height: 200%;margin-bottom: 0;}
 	
 	hr, 
 	.hr-style {
@@ -190,6 +190,23 @@
 	.dcjq-accordion ul a{
 	border-bottom: 1px dotted #990033 !important;
 	font-size: .8em !important;
+	}
+	
+	.homepage-lower-graphics {
+	  width: 100%;
+	  overflow: hidden;
+	  max-width: 100%;
+	  overflow: hidden;
+	  margin: 3em -1em 4em 0 !important;
+	  padding-top: 2em;
+	  padding-right: 20px;
+	} 
+	
+	.homepage-lower-graphics-column-two img {
+		margin-left: 1em !important;
+	}
+	.homepage-lower-graphics-column-three img {
+		margin-left:  -1em !important;
 	}
 /*	.dcjq-accordion ul a:hover {
 	background-color: #c4a006 !important;
@@ -347,12 +364,12 @@
 
 .no-bullet ul {list-style: none; text-decoration: none; }
 .no-bullet li {list-style: none; text-decoration: none !important;}
-.no-bullet a {text-decoration: none; border-bottom: 1px dotted #990033; line-height: 1.75em; }
+.no-bullet a {text-decoration: none; border-bottom: 1px dotted #990033; line-height: 175%; }
 
 .bulleted-list {list-style-type: disc; list-style-position: outside !important; padding: 0;}
 .bulleted-list li {margin-bottom: 0.5em;}
 	
-.body-list {padding-left: 2.5em !important; text-indent: -1em; line-height: 2em; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
+.body-list {padding-left: 2.5em !important; text-indent: -1em; line-height: 200%; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
 .body-list li {margin-bottom: 0.5em;	}
 
 /* END LIST STYLING */
@@ -527,6 +544,41 @@ figure{
 	  display: block;
 	  height: 0;
 	  clear: both; }
+	  
+	.step {
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    margin-left: 2em;
+    border: 4px solid #a6a6a6;
+    color: #a6a6a6;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+    border-radius: 50%;
+	}  
+	  
+  .step-number {
+		text-align: center;
+		font-size: 2.5em;
+		line-height: 0;
+		margin-left: -0.26em;
+  }
+  
+  .circle {
+    position: relative;
+    display: inline-block;
+    width: 11% !important;
+    height: 0;
+    padding:5% 0 !important;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #a6a6a6;
+    color: #a6a6a6;
+    font-family: 'open sans', sans;
+    font-size: 1em;
+    line-height: 10%;
+    text-align: center;
+  }
   
 /* ====================== END BIO & PIC LAYOUT ========================== */
   
