@@ -281,9 +281,10 @@
 	border-width: 1px;
 	border-color: #d8d8d8; 
 	border-radius:3px; 
+	font-size: smaller;
 	margin-bottom: 1rem;
 	padding: 1rem;
-	paddding-bottom: 0 !important;
+	padding-bottom: 0 !important;
 	background: #f2f2f2;
 	}
 	
@@ -965,7 +966,6 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
    */
    
   .button {
-  	padding: 1em auto;
   	width: 100%;
   	text-align: center;
   }
