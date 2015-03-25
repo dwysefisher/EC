@@ -372,6 +372,21 @@
 .body-list {padding-left: 2.5em !important; text-indent: -1em; line-height: 200%; margin-bottom: 0.5em; text-decoration: none; list-style-position: inside;}
 .body-list li {margin-bottom: 0.5em;	}
 
+.inline-button {
+	display: block;
+	padding: 50px 0 0 30px;
+}
+
+.inline-button li {
+	margin: 0 0 0 5px;
+}
+
+.inline-button li a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: none;
+}
+    
 /* END LIST STYLING */
 
 /*==========================================================================
@@ -948,6 +963,12 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
     	td:nth-of-type(3):before { content: "Returning Students"; }
     	td:nth-of-type(4):before { content: "Details"; }
    */
+   
+  .button {
+  	padding: 1em auto;
+  	width: 100%;
+  	text-align: center;
+  }
     
 }
 
