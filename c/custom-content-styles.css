@@ -688,6 +688,17 @@ col.commuter {
 	text-align: center;
 }
 
+.wide-column {
+	width: 60%;
+}
+			
+.half-column {
+	width: 50%;
+}			
+.quarter-column {
+	width:  25%;
+}
+
 /*==============END ZEBRA TABLE LAYOUT======================*/
 
 
@@ -942,7 +953,7 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
     	border: none;
     	border-bottom: 1px solid #eee; 
     	position: relative;
-    	padding-left: 50%; 
+    	padding-left: 5%; 
     }
     
     .data-table td:before { 
