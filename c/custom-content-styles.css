@@ -755,29 +755,38 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 		    margin-bottom: 20px;
 		}
 		.accordion-title {
+		    display: block;
 		    position: relative;
 		    padding: 1em 1.5em;
-		    border-top: 1px solid #ccc;
+		    border:  0;
+		    border-top: 0;
 		    margin: 0;
 		    padding: 20px 0;
 		    cursor: pointer;
 		}
 		
-		.accordion-title:hover {background-color: #ccc;}
+		/*.accordion-title{display:block;padding:5px 15px;border:1px solid #cccccc;cursor:pointer;}
+		.accordion-content{display:block;margin:0;padding:5px 15px;border:1px solid #cccccc;}*/
+		
+		/*.accordion-title:hover {background-color: #ccc;}*/
 		.accordion-title:first-child {border: none;}
 		.accordion-title.open {cursor: default;}
-		.accordion-content {padding-bottom: 20px; border: 1px solid #ccc !important;	}
+/*		.accordion-content {padding-bottom: 20px; border: 1px solid #ccc !important;	} */
+.accordion-content {display: block;
+	padding-bottom: 20px; border: 0;	}
 		.accordion-title:after {
-			position: absolute;
 			font-family: FontAwesome;
+			/*position: absolute;
 			top: 5px;
-			right: 1em;
-			content: "\f078";
-			color: #990033;
+			right: 1em;*/
+			padding-left: 1em;
+			content: "\f067";
+			color: #ccc;
+			font-size: 90%;
 		}
 		.accordion-title.open:after {
 			font-family: FontAwesome;
-			content: "\f077";
+			content: "\f068";
 		}				
 /*==============END ACCORDION STYLING ======================*/
 
