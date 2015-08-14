@@ -16,6 +16,8 @@
 	<img src="<?php echo get_template_directory_uri(); ?>/library/images/discover-header.jpg" class="secondary-header-img" alt="Eureka College - Discover" />
 <?php elseif ( 'faculty_page' == get_post_type() ) : ?>
 	<img src="<?php echo get_template_directory_uri(); ?>/library/images/faculty-header.jpg" class="secondary-header-img" alt="Eureka College - Faculty" />
+<?php elseif ( is_single('11610') ) : ?>
+<img src="<?php echo get_template_directory_uri(); ?>/library/images/reagan-center-giving-banner.jpg" class="secondary-header-img" alt="Eureka College - Reagan Center Revitalization" />
 <?php elseif ( 'giving_page' == get_post_type() ) : ?>
 	<img src="<?php echo get_template_directory_uri(); ?>/library/images/giving-header.jpg" class="secondary-header-img" alt="Eureka College - Giving" />
 <?php elseif ( 'library_page' == get_post_type() ) : ?>
