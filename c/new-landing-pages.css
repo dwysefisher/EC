@@ -1,0 +1,55 @@
+#content.full-width {
+    background-color: #d3d3d3;
+    box-shadow: 0px 0px 50px #a6a6a6 inset;
+    margin: 0px;
+    z-index: 100;
+}
+
+#inner-content {
+	background-color: none;
+}
+
+.full_width #main {
+    min-height: 900px;
+    float: left;
+    margin-top: -1em;
+    padding: 0px 40px 40px;
+}
+
+#main article {
+    white-space: normal;
+    margin-top: -8em;
+}
+
+.page-title {
+    background-color: #fff;
+    padding: 0.375em;
+}
+    
+h1 {
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+.entry-content {
+    background-color: #fff;
+}
+
+.full_width {
+	width: 90%;
+	text-align: left;
+	float: none;
+	margin: 0px auto !important;    
+}
+
+<div class="content-column one_third"><section class="one_third_aside">
+<p></p>
+<div>
+<p><iframe src="http://cdn.youvisit.com/tour/Embed/imageFrame?v=2.5.1.20&amp;inst=59878&amp;w=225&amp;h=150&amp;loc=&amp;pl=v&amp;index=0&amp;alpha=0.2&amp;quality=10&amp;legacy=0&amp;debug=&amp;titleshow=hidden" style="border: medium none; overflow: hidden; position: relative; width: 225px; max-width: 225px; min-width: 225px; height: 150px; max-height: 150px; min-height: 150px;" scrolling="no" frameborder="0"></iframe><script src="http://www.youvisit.com/tour/Embed/js2" async="async"></script></p>
+</div>
+<p><a class="button" title="Like Eureka College Admissions on Facebook" href="https://www.fb.com/EurekaCollegeAdmissions"><i class="fa fa-facebook fa-2x fa-inverse"></i> Like us on Facebook</a></p>
+<p><a class="button" title="Follow Eureka College Admissions on Twitter" href="http://www.twitter.com/AdmissionsEC"><i class="fa fa-twitter fa-2x fa-inverse"></i> Follow us on Twitter</a><br>
+</p></section></div>

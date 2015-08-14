@@ -1824,7 +1824,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   *********************/
   .header-main-nav{position: relative; z-index: 199; width: 100%; min-width: 900px; margin: 0 auto -14px auto; background-color: #c4a006;}
   @media only screen and (min-width:1300px){
-	  .header-main-nav{max-width:100%;}
+	  .header-main-nav{max-width:1300px;}
   }
   .header-main-nav ul{display: block; width: 100%; overflow:hidden; background-color: #c4a006; margin:0; padding: 0;}
   .header-main-nav ul li{display: block; width: 16.6%; float: left; border-right: 2px solid #b49304;}
@@ -1926,7 +1926,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   /* end .nav */
   #home-inner-content{width: 90%; min-width: 900px; margin: 0 auto 0 auto;}
   #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: #ffffff;}
-  .full-width #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: none !important;}
+  .full-width #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: #ffffff;}
   .full-width #main{width: 100%;}
   #home-main{width: 60%; padding: 20px 40px 40px 40px; background-color: none; color: #ffffff;}
   #home-main h1.page-title{color: #ffffff;}

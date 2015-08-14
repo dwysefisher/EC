@@ -1,5 +1,54 @@
 //**ENTER CUSTOM CONTENT STYLES IN THIS CSS FILE **//
 
+#content.full-width {
+    background-color: #d3d3d3;
+    box-shadow: 0px 0px 50px #a6a6a6 inset;
+    margin: 0px;
+    z-index: 100;
+}
+
+.full-width #inner-content{width: 90%; min-width: 900px; margin: 0 auto 0auto; background-color: none !important;}
+
+
+#main .full-width {
+    min-height: 900px;
+    float: left;
+    margin-top: -1em;
+    padding: 0px 40px 40px;
+}
+
+.full-width #main article {
+    white-space: normal;
+    margin-top: -8em;
+}
+
+.full-width .page-title {
+    background-color: #fff;
+    padding: 0.375em;
+}
+
+.full-width .entry-content {
+    background-color: #fff;
+}
+    
+/* h1 {
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+
+
+.full_width {
+	width: 90%;
+	text-align: left;
+	float: none;
+	margin: 0px auto !important;    
+} 
+
+----------------------------- */
 
 	h4 {
 	  margin: 1.33em 0;
@@ -788,7 +837,7 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
 			font-family: FontAwesome;
 			content: "\f068";
 		}				
-/*==============END ACCORDION STYLING ======================*/
+/*============== END ACCORDION STYLING ======================*/
 
 /***==========================================================================
 
