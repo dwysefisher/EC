@@ -13,13 +13,13 @@
 #main .full-width {
     min-height: 900px;
     float: left;
-    margin-top: -1em;
+    margin-top: 1em;
     padding: 0px 40px 40px;
 }
 
 .full-width #main article {
     white-space: normal;
-    margin-top: -8em;
+    margin-top: 8em;
 }
 
 .full-width .page-title {
@@ -126,8 +126,10 @@ h3 {
 	
 	hr, 
 	.hr-style {
+			margin: 2.5em 0;
 	    border: 0;
 	    height: 0;
+	    border-color: rgba(0, 0, 0, 0.25) -moz-use-text-color rgba(255, 255, 255, 0.3);
 	    border-top: 1px solid rgba(0, 0, 0, 0.1);
 	    border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
 	
@@ -557,8 +559,15 @@ figure{
 .gallery-fifth a{
 	margin: 0;
 }	
-			
-/*================END GALLERY===============================*/
+
+/*================ END IMAGES ===============================*/
+
+
+/*================ CALENDAR & EVENTS ===============================*/
+
+
+	
+/*================ END CALENDAR & EVENTS ===============================*/
 
 /* ========================= BIO & PIC LAYOUT =========================== */
 
