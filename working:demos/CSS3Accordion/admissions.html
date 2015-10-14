@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://www.eureka.edu/wp-content/themes/Eureka-Custom-Theme/library/css/bootstrap.min.css" type="">
+ 	<link rel="stylesheet" href="http://www.eureka.edu/wp-content/themes/Eureka-Custom-Theme/library/css/style.css" type="" />
+<link rel="stylesheet" href="http://www.eureka.edu/wp-content/themes/Eureka-Custom-Theme/library/css/custom-content-styles.css" type="" />
+        <!--   <script language="javascript" type="text/javascript" src="jquery-1.8.3.js"></script>
+        <script src="http://www.eureka.edu/wp-content/themes/Eureka-Custom-Theme/library/js/vendor/bootstrap.min.js"></script>-->
+
+        
+<style type="text/css" media="screen">
+	
+	body {
+		padding: 0 20px;}
+		
+	.checkmark {
+		text-align: center;
+	}
+    
+/*
+h1 {
+    padding: 20px 10px;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: normal;
+    background: rgb(144,144,144);
+    background: rgba(255,255,255,.1);
+    color: #FFF;
+}
+h1 a {
+    color: #ff7e00;
+    font-size: 20px;
+}*/
+.accordionMenu {
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    background: #FFF;
+}
+.accordionMenu h2 {
+    margin: 5px 0;
+    padding: 0;
+}
+.accordionMenu h2 a {
+    font-size: 18px;
+    display: block;
+    font-weight: normal;
+    color: #FFF;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    background: rgb(59,59,59);
+    background: rgba(0,0,0,.4);
+    position: relative;
+}
+.accordionMenu :not(:target) h2 a {
+/*    background: rgb(59,59,59);
+    background: rgba(0,0,0,.4);*/
+    position: relative;
+}
+.accordionMenu h2 a:hover,
+.accordionMenu h2 a:active,
+.accordionMenu h2 a:focus {
+/*    background-color: rgb(59,59,59);
+    background-color: rgba(255,255,255,.3);*/
+}
+.accordionMenu :target p,
+.accordionMenu :not(:target) p {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    -moz-transition: height .5s ease;
+    -webkit-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+}
+.accordionMenu :target p { height: 295px }
+.accordionMenu #apply-group p,
+.accordionMenu #transfer-group p,
+.accordionMenu #international-group p,
+.accordionMenu #degree-group p,
+.accordionMenu #other-group p {
+    position: relative;
+    background: 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/*.accordionMenu #transfer-group p {  }
+.accordionMenu #international-group p {  }*/
+.accordionMenu p { height: 295px }
+.accordionMenu p span {
+    font-size: 14px;
+    display: block;
+    height: 35px;
+    padding: 15px 0 0 0;
+    text-indent: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #FFF;
+/*    background: rgb(144,144,144);
+    background: rgba(0,0,0,.6);*/
+    background: #FFF;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+h1,
+.accordionMenu h2 a,
+.accordionMenu :not(:target) p {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+		
+</style>
+<!--	<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Accordion with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Accordion with CSS3" />
+        <meta name="keywords" content="accordion, css3, sibling selector, radio buttons, input, pseudo class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+		
+		<link rel="stylesheet" href="..//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		<script src="..//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="..//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<link rel="stylesheet" href="../resources/demos/style.css">
+        <link href="../jquery-ui.css" rel="stylesheet">
+		
+		<script>
+		$(function() {
+		  $( "#accordion" ).accordion({
+		    collapsible: true
+		  });
+		});
+		</script>-->
+    </head>
+    <body>
+           <div>
+            <div>
+                <!--<h1>CSS3 Toggler</h1>-->
+
+                <ul class="accordionMenu">
+                    <li id="apply-group" class="no-bullet">
+                        <h2><a href="#apply-group">First-year students</a></h2>
+
+If you are applying as a first time, please:
+<ol class="body-list">
+	<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+	<li><b>Print</b> the <a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_secondary_school.pdf" target="_blank" class="underline">Secondary School Report/Transcript Request</a> and give to your high school counselor to complete and return WITH official transcripts from your high school. Official transcripts must be sent directly from your high school to Eureka College.</li>
+	<li><b>Request/Submit ACT and/or SAT results</b> to Eureka College if your score is not on your official high school transcript. (Our ACT code is 1022; our SAT code is 1206)</li>
+	<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+</ol>
+
+	<blockquote>
+	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+			<p>Eureka College
+			Office of Admissions
+			300 E. College Avenue
+			Eureka, IL 61530</p>
+	</blockquote>
+
+<h4><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn underline">Begin your first-year application</a></h4>
+	</li>
+
+                    <li id="transfer-group">
+                        <h2><a href=
+                        "#transfer-group">Transfer students</a></h2>
+
+                        If you are applying as a transfer student with 30 semester hours or more of college credit, please:
+                        
+                        	<ol class="body-list">
+                        		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+                        		<li><b>Request</b> official transcripts from all colleges and universities be sent to Eureka College.</li>
+                        		<li>If you have less than 30 semester hours of college credit, please <b>Request</b> official high school transcripts and ACT/SAT scores.</li>
+                        		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+                        	</ol>
+                        
+                        	<blockquote>
+                        	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+                        			<p>Eureka College
+                        			Office of Admissions
+                        			300 E. College Avenue
+                        			Eureka, IL 61530</p>
+                        	</blockquote>
+                        
+                        <h4><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn underline">Begin your transfer application</a></h4>
+                    </li>
+
+                    <li id="international-group">
+                        <h2><a href=
+                        "#international-group">International students</a></h2> 
+
+                        <p><span>CSS3 Eigenschaften: MediaQueries,
+                        Transform &amp; Transition Modules,
+                        ...</span></p>
+                    </li>
+                    
+                    <li id="degree-group">
+                        <h2><a href=
+                        "#degree-group">Degree completion students</a></h2> 
+
+                        <p><span>CSS3 Eigenschaften: MediaQueries,
+                        Transform &amp; Transition Modules,
+                        ...</span></p>
+                    </li>
+
+                    <li id="other-group">
+                        <h2><a href=
+                        "#other-group">Other ways to apply</a></h2> 
+
+                        <p><span>CSS3 Eigenschaften: MediaQueries,
+                        Transform &amp; Transition Modules,
+                        ...</span></p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+                
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h4 class="first-line">First-year students</h4>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        If you are applying as a first time, please:
+<ol class="body-list">
+	<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+	<li><b>Print</b> the <a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_secondary_school.pdf" target="_blank" class="underline">Secondary School Report/Transcript Request</a> and give to your high school counselor to complete and return WITH official transcripts from your high school. Official transcripts must be sent directly from your high school to Eureka College.</li>
+	<li><b>Request/Submit ACT and/or SAT results</b> to Eureka College if your score is not on your official high school transcript. (Our ACT code is 1022; our SAT code is 1206)</li>
+	<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+</ol>
+
+	<blockquote>
+	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+			<p>Eureka College
+			Office of Admissions
+			300 E. College Avenue
+			Eureka, IL 61530</p>
+	</blockquote>
+
+<h4><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn">Begin your first-year application</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h4>Transfer students</h4>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+If you are applying as a transfer student with 30 semester hours or more of college credit, please:
+
+	<ol class="body-list">
+		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+		<li><b>Request</b> official transcripts from all colleges and universities be sent to Eureka College.</li>
+		<li>If you have less than 30 semester hours of college credit, please <b>Request</b> official high school transcripts and ACT/SAT scores.</li>
+		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+	</ol>
+
+	<blockquote>
+	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+			<p>Eureka College
+			Office of Admissions
+			300 E. College Avenue
+			Eureka, IL 61530</p>
+	</blockquote>
+
+<h4><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn">Begin your transfer application</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h4>International students</h4>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        If you are applying as an international student, (in addition to the requirements described above for Freshmen and Transfer) please:
+	<ol class="body-list">
+		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+		<li><b>Submit TOEFL results</b>, if your first language is not English.</li>
+		<li><b>Request</b> official transcripts, in English, from all colleges and universities be sent to Eureka College.</li>
+		<li><b>Provide</b> a Statement of Finance.</li>
+		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+	</ol>
+
+<h4>Notes for International Students</h4>
+	<ul class="body-list">
+		<li>Eureka College does not charge an application fee.</li>
+		<li>The Secondary School Report is attached to the application form. If you apply online, this form must be printed from the website. Copies of all secondary school and (if applicable all college/university) transcripts in English.</li>
+		<li>A minimum Grade Point Average (GPA) on a 4 point scale is required.</li>
+		<li>Students from non-English speaking countries should submit ACT or SAT scores or have a minimum score of 550 on the Paper-Based Test of English as a Foreign Language (TOEFL) or CBT equivalent. Attendance at an American School or High School generally will mean the TOEFL is waived as long as classes in English are of a "B" grade or higher. In addition to all normal application procedures, international students must demonstrate the ability to supply funds to finance their education. International students may be considered for all Eureka scholarships.</li>
+		<li>A completed copy of the Sources of Support Form.</li>
+	</ul>
+	
+	<blockquote>
+	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+			<p>Eureka College
+			Office of Admissions
+			300 E. College Avenue
+			Eureka, IL 61530</p>
+	</blockquote>
+The Office of Admission will notify you of the receipt of your application with a reminder of outstanding materials needed before an admissions decision can be made.
+<h4><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn">Begin your application</a></h4>
+      </div>
+    </div>
+  </div>
+        
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <h4>Degree completion students</h4>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+ If you are applying as an adult learner in the Organizational Leadership cohort program , please:
+	<ol class="body-list">
+		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+		<li><b>Request</b> official transcripts, in English, from all colleges and universities be sent to Eureka College.</li>
+		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+	</ol>
+
+<blockquote>
+<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+		<p>Eureka College
+		Office of Admissions
+		300 E. College Avenue
+		Eureka, IL 61530</p>
+</blockquote>
+
+<h4><a href="http://www.whatsnextillinois.org/applications/Eureka_College_Lifelong_Learning/logon.asp?nextpage=/applications/Eureka_College_Lifelong_Learning/Eureka_College_Lifelong_Learning1.asp" target="_blank" class="btn">Begin your degree completion application</a></h4>
+<a id="ways-to-apply"></a>
+      </div>
+    </div>
+  </div>
+        
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <h4>Other ways to apply</h4>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+	<blockquote>
+		<p><a href="http://www.eureka.edu/wp-content/uploads/2013/08/Admission-Application-Single-2014.pdf" target="_blank" rel="attachment wp-att-1411" class="underline">Enrollment Application</a></p>
+		<p><a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_Application_ReAdmission.pdf" target="_blank" class="underline">Application for Re-admission</a></p>
+		<p><a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_Application_Unclassified_enroll.pdf" target="_blank" class="underline">Application for Unclassified Enrollment</a></p>
+	</blockquote>
+	
+<h5>Request an application by:</h5>
+	<h5>Calling:</h5>
+		<p>1-888-438-7352</p>
+	<h5>or Write to:</h5>
+		<p>Office of Admissions<br />
+		Eureka College<br />
+		300 East College Avenue<br />
+		Eureka, Illinois 61530<br /></p>
+		<p>email: <a href="mailto: admissions@eureka.edu">admissions@eureka.edu</a></p>
+      </div>
+    </div>
+  </div>    
+</div>  
+
+
+
+        
+
+        
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="../dist/js/bootstrap.min.js"></script>
+  <script src="../assets/js/docs.min.js"></script>
+    </body>
+</html>

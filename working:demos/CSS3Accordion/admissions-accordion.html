@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+ 	<link rel="stylesheet" href="http://www.eureka.edu/wp-content/themes/Eureka-Custom-Theme/library/css/style.css" type="" />
+<link rel="stylesheet" href="http://www.eureka.edu/wp-content/themes/Eureka-Custom-Theme/library/css/custom-content-styles.css" type="" />
+
+        
+<style type="text/css" media="screen">
+	
+	body {
+		padding: 0 20px;}
+		
+	.checkmark {
+		text-align: center;
+	}
+	
+	/*Define Accordion box*/  
+	.accordion {   
+	     width:auto;  
+	     overflow:hidden;   
+	     margin:10px auto;   
+	     color: silver;   
+	     background:silver;   
+	     padding:10px;  }  
+	
+	/*Set style of open slide*/
+	.accordion section:target { background:#fff; padding:10px;}
+	.accordion section:target:hover { background:#FFF; }
+	.accordion section:target h4 {width:100%;	}
+	.accordion section:target h4 a{ color:#990033; padding:0; font-weight: bold;	}
+	.accordion section:target p {display:block;}
+	.accordion section h4 a{padding:8px 10px;display:block; font-size:16px; font-weight:normal;color:#990033; text-decoration:none; }
+	
+	/*set style of closed slide*/
+    .accordion section{ float:left;	overflow:hidden; color:#565656; cursor:pointer; background: #A9A9A9; margin:3px; }
+    .accordion section:hover {background:#D3D3D3;	}
+    .accordion section p { display:none; }
+    .accordion section:after{position:relative;font-size:24px;color:#a9a9a9;font-weight:bold;}
+			
+/*Vertical Accordion *************************************************************************/
+.vertical section{ width:100%; height:40px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;}
+/*Set height of the slide*/
+.vertical :target{ height:auto; width:97%; }
+
+.vertical section h4 { position:relative; left:0; top:-15px; }
+
+#isexpanded:checked ~ #expand-btn, #isexpanded:checked ~ * #expand-btn {
+    background: #B5B5B5;
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+    box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+}
+
+#isexpanded, .expandable {
+    display: none;
+}
+
+#isexpanded:checked ~ * div.expandable {
+    display: inline;
+    background: #cccccc;
+}
+
+#isexpanded:checked ~ div.expandable, #isexpanded:checked ~ * div.expandable {
+    display: block;
+    background: #cccccc;
+}
+
+		
+</style>
+    </head>
+    <body>
+    
+			<h3>Apply today</h3>
+			<div class="accordion vertical">
+                <section id="apply-group">
+                        <h4><a href="#apply-group">First-year students</a></h4>
+
+											If you are applying as a first time, please:
+											<ol class="body-list">
+												<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+												<li><b>Print</b> the <a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_secondary_school.pdf" target="_blank" class="underline">Secondary School Report/Transcript Request</a> and give to your high school counselor to complete and return WITH official transcripts from your high school. Official transcripts must be sent directly from your high school to Eureka College.</li>
+												<li><b>Request/Submit ACT and/or SAT results</b> to Eureka College if your score is not on your official high school transcript. (Our ACT code is 1022; our SAT code is 1206)</li>
+												<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+											</ol>
+											
+												<blockquote>
+												<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+														<p>Eureka College
+														Office of Admissions
+														300 E. College Avenue
+														Eureka, IL 61530</p>
+												</blockquote>
+											
+											<h6><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn underline">Begin your first-year application</a></h6>
+										</section>
+
+                    <section id="transfer-group">
+                        <h4><a href="#transfer-group">Transfer students</a></h4>
+
+                        <p>If you are applying as a transfer student with 30 semester hours or more of college credit, please:</p>
+                        
+                        	<ol class="body-list">
+                        		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+                        		<li><b>Request</b> official transcripts from all colleges and universities be sent to Eureka College.</li>
+                        		<li>If you have less than 30 semester hours of college credit, please <b>Request</b> official high school transcripts and ACT/SAT scores.</li>
+                        		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+                        	</ol>
+                        
+                        	<blockquote>
+                        	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+                        			<p>Eureka College
+                        			Office of Admissions
+                        			300 E. College Avenue
+                        			Eureka, IL 61530</p>
+                        	</blockquote>
+                        
+                        <h6><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn underline">Begin your transfer application</a></h6>
+                    </section>
+
+                    <section id="international-group">
+                        <h4><a href="#international-group">International students</a></h4> 
+
+                                If you are applying as an international student, (in addition to the requirements described above for Freshmen and Transfer) please:
+                        	<ol class="body-list">
+                        		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+                        		<li><b>Submit TOEFL results</b>, if your first language is not English.</li>
+                        		<li><b>Request</b> official transcripts, in English, from all colleges and universities be sent to Eureka College.</li>
+                        		<li><b>Provide</b> a Statement of Finance.</li>
+                        		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+                        	</ol>
+                        
+                        <p><b>Notes for International Students</b></p>
+                        	<ul class="body-list">
+                        		<li>Eureka College does not charge an application fee.</li>
+                        		<li>The Secondary School Report is attached to the application form. If you apply online, this form must be printed from the website. Copies of all secondary school and (if applicable all college/university) transcripts in English.</li>
+                        		<li>A minimum Grade Point Average (GPA) on a 4 point scale is required.</li>
+                        		<li>Students from non-English speaking countries should submit ACT or SAT scores or have a minimum score of 550 on the Paper-Based Test of English as a Foreign Language (TOEFL) or CBT equivalent. Attendance at an American School or High School generally will mean the TOEFL is waived as long as classes in English are of a "B" grade or higher. In addition to all normal application procedures, international students must demonstrate the ability to supply funds to finance their education. International students may be considered for all Eureka scholarships.</li>
+                        		<li>A completed copy of the Sources of Support Form.</li>
+                        	</ul>
+                        	
+                        	<blockquote>
+                        	<h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+                        			<p>Eureka College
+                        			Office of Admissions
+                        			300 E. College Avenue
+                        			Eureka, IL 61530</p>
+                        	</blockquote>
+                        The Office of Admission will notify you of the receipt of your application with a reminder of outstanding materials needed before an admissions decision can be made.
+                        <h6><a href="http://www.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="btn underline">Begin your application</a></h6>
+                    </section>
+                    
+                    <section id="degree-group">
+                        <h4><a href="#degree-group">Degree completion students</a></h4> 
+													If you are applying as an adult learner in the Organizational Leadership cohort program , please:
+                        	<ol class="body-list">
+                        		<li><b>Fully complete</b> the <a href="https://secure.whatsnextillinois.org/Applications/Eureka_College/apply.html" target="_blank" class="underline">application for admission.</a></li>
+                        		<li><b>Request</b> official transcripts, in English, from all colleges and universities be sent to Eureka College.</li>
+                        		<li><b>Print the Application Agreement Statement</b> that appears after you submit the application. This confirmation page can also be printed by logging into the <a href="http://www.whatsnextillinois.org/" target="_blank" class="underline">What's Next Illinois website</a>.</li>
+                        	</ol>
+                        
+                        <blockquote>
+                        <h6>Note: Applications are considered on a rolling basis following receipt of all required items. All supporting materials should be mailed to:</h6>
+                        		<p>Eureka College
+                        		Office of Admissions
+                        		300 E. College Avenue
+                        		Eureka, IL 61530</p>
+                        </blockquote>
+                        
+                        <h6><a href="http://www.whatsnextillinois.org/applications/Eureka_College_Lifelong_Learning/logon.asp?nextpage=/applications/Eureka_College_Lifelong_Learning/Eureka_College_Lifelong_Learning1.asp" target="_blank" class="btn underline">Begin your degree completion application</a></h6>
+                    </section>
+
+                    <section id="other-group">
+                        <h4><a href="#other-group">Other ways to apply</a></h4> 
+
+                        	<ul class="no-bullet">
+                        	<li><a href="http://www.eureka.edu/wp-content/uploads/2013/08/Admission-Application-Single-2014.pdf" target="_blank" rel="attachment wp-att-1411" class="underline">Enrollment Application</a></li>
+                        	<li><a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_Application_ReAdmission.pdf" target="_blank" class="underline">Application for Re-admission</a></li>
+                        		<li><a href="http://www.eureka.edu/wp-content/uploads/2013/08/EC_Application_Unclassified_enroll.pdf" target="_blank" class="underline">Application for Unclassified Enrollment</a></li>
+                        		</ul>
+                                              	
+                        <p>Request an application by:</p>
+                        	<p>Calling: 1-888-438-7352</p>
+                        	
+                        	<p>Writing to:</p>
+                        		<ul class="no-bullet">
+                        		<li>Office of Admissions</li>
+                        		<li>Eureka College</li>
+                        		<li>300 East College Avenue</li>
+                        		<li>Eureka, Illinois 61530</li>
+                        		<li>email: <a href="mailto: admissions@eureka.edu" class="underline">admissions@eureka.edu</a></li>
+                        		</ul>
+                    </section>
+            </div>
+            
+    </body>
+</html>
