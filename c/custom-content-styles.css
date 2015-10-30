@@ -565,7 +565,13 @@ figure{
 
 /*================ CALENDAR & EVENTS ===============================*/
 
-
+.event-aside {
+	width: 20%; 
+	float:left; 
+	padding-right: 1em !important;
+	margin-top: 1.25em;}
+	
+.event-article {float: right; width: 80%;}
 	
 /*================ END CALENDAR & EVENTS ===============================*/
 
@@ -1047,6 +1053,9 @@ body #gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
   	width: 100%;
   	text-align: center;
   }
+  
+  .event-aside {width: 200px; max-width: 100%; margin: 0.5em 0 !important;	}
+  .event-article {width: 100%;}
     
 }
 
