@@ -1559,7 +1559,7 @@ tweeners.
   /********************************/
   /**MOBILE SECONDARY PAGE STYLES*********/
   /********************************/
-  #main{margin: 0 20px 0 20px;float:left !important;}
+  #main{margin: 0 20px 0 20px;}
   #sidebar1{display: none;}
   #main.one_third{min-width: 100%;}
   #main.two_third{min-width: 100%;}
@@ -2006,13 +2006,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .home-event-month-year, .home-news-month-year{width: 30px; margin: -3px 0 0 0; padding: 0; float: left; font-size: 1em; font-weight: bold; color: #c4a006; text-transform:uppercase;}
   .home-event-year, .home-news-year{margin: -4px 0 0 0;}
   .homepage-mobile-links{display: none;}
-  
-  #sidebar-social{margin-top:10px;margin-left: 2.762430939%;color:#939292;font-size:14px;}
-  #content #sidebar-social{clear:both !important;color:#939292 !important;text-align:left !important;margin-top:10px;margin-left: 2.762430939%;color:#939292;font-size:14px;}
-  #content #sidebar-social a{color:#939292 !important;display:inline-block;margin:0 5px !important;text-align:left !important;}
-  #content  #sidebar-social a:hover{color:#990033 !important;}
-  #sidebar-social .button{margin:0 10px;background:#939292;}
-  #sidebar-social .button:hover{background:#990033;}
   
   /*******************************************************/
   /*ACCORDION NAV STYLES**********************************/
