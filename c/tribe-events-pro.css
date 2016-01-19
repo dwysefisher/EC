@@ -1,7 +1,8 @@
 .tribe-events-loop .tribe-events-content,
 .entry-content,
-.description {
-	font-family: "Merriweather",serif !important;
+.description,
+#tribe-events-pg-template {
+	font-family: 'Merriweather', serif !important;
 	font-size: 1em;
 	margin-top: 1.5em;
 }
@@ -10,11 +11,12 @@
 	background-color: #990033;
 }
 
-#tribe-events-pg-template .tribe-events-content ul {padding-left: 2.5em !important; text-indent: -1em; text-decoration: none; list-style-type: none; list-style-position: inside;}
-
-#tribe-events-pg-template .tribe-events-content ul li {
-	line-height: 0.7;
+.tribe-events-single {
+	margin: 0 auto;
+	max-width: 45em;
 }
+
+#tribe-events-pg-template .tribe-events-content ul {padding-left: 2.5em !important; text-indent: -1em; text-decoration: none; list-style-type: disc; list-style-position: inside;}
 
 .tribe-events-photo-event {
 	font-size: 0.8em !important;
@@ -22,4 +24,12 @@
 
 #tribe-events .tribe-events-content p, .tribe-events-after-html p, .tribe-events-before-html p {
 	padding: 1em 0 0.5em;
+}
+
+.tribe-events-single-event-title h1 {
+	font-weight: 400 !important;
+}
+
+.tribe-events-schedule h2 {
+	font-weight: 300;
 }
