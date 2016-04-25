@@ -70,11 +70,11 @@ h3 {
 	
 	.one_third_aside img {margin-top: 0.5em !important;}
 	
-	.two_third .last_column {
+	.two_third.last_column {
 	    width: 66% !important;
 	    margin-right: 0px }
 	
-	.two_third .last_column p {
+	.two_third.last_column p {
 		line-height: 200%;
 		font-size:1em;}
 	
@@ -84,11 +84,11 @@ h3 {
 	    text-align: right;
 	    padding-right: 1em;}
 	
-	.three_fourth .last_column {
+	.three_fourth.last_column {
 	    width: 75% !important;
 	    margin-right: 0px !important;}
 	
-	.three_fourth .last_column p {
+	.three_fourth.last_column p {
 		line-height: 200%;
 		font-size:1em;}
 		
@@ -100,7 +100,7 @@ h3 {
 	
 	.first-image {margin-top: 1.5em !important;}
 		
-	.one_third .last_column {
+	.one_third.last_column {
 		width: 28% !important;
     margin-left: 2% !important;
     text-align: right;
@@ -818,9 +818,6 @@ font-size: 0.9em;	}
 
 }
 
-#tribe-events-pg-template .tribe-events-content ul {
-    text-indent: 0;
-
 /*==============END FORM STYLING ======================*/
 
 /***======================================================================
@@ -828,42 +825,43 @@ font-size: 0.9em;	}
 									ACCORDION STYLING
 
 =======================================================================***/
-.accordion {
-    margin-bottom: 20px;
-}
-.accordion-title {
-    display: block;
-    position: relative;
-    padding: 1em 1.5em;
-    border:  0;
-    border-top: 0;
-    margin: 0;
-    padding: 20px 0;
-    cursor: pointer;
-}
-
-/*.accordion-title{display:block;padding:5px 15px;border:1px solid #cccccc;cursor:pointer;}
-.accordion-content{display:block;margin:0;padding:5px 15px;border:1px solid #cccccc;}*/
-
-/*.accordion-title:hover {background-color: #ccc;}*/
-.accordion-title:first-child {border: none;}
-.accordion-title.open {cursor: default;}
+		.accordion {
+		    margin-bottom: 20px;
+		}
+		.accordion-title {
+		    display: block;
+		    position: relative;
+		    padding: 1em 1.5em;
+		    border:  0;
+		    border-top: 0;
+		    margin: 0;
+		    padding: 20px 0;
+		    cursor: pointer;
+		}
+		
+		/*.accordion-title{display:block;padding:5px 15px;border:1px solid #cccccc;cursor:pointer;}
+		.accordion-content{display:block;margin:0;padding:5px 15px;border:1px solid #cccccc;}*/
+		
+		/*.accordion-title:hover {background-color: #ccc;}*/
+		.accordion-title:first-child {border: none;}
+		.accordion-title.open {cursor: default;}
 /*		.accordion-content {padding-bottom: 20px; border: 1px solid #ccc !important;	} */
-.accordion-content {display: block;	padding-bottom: 20px; border: 0;	}
-.accordion-title:after {
-    font-family: FontAwesome;
-    /*position: absolute;
-    top: 5px;
-    right: 1em;*/
-    padding-left: 1em;
-    content: "\f067";
-    color: #ccc;
-    font-size: 90%;
-}
-.accordion-title.open:after {
-    font-family: FontAwesome;
-    content: "\f068";
-}				
+.accordion-content {display: block;
+	padding-bottom: 20px; border: 0;	}
+		.accordion-title:after {
+			font-family: FontAwesome;
+			/*position: absolute;
+			top: 5px;
+			right: 1em;*/
+			padding-left: 1em;
+			content: "\f067";
+			color: #ccc;
+			font-size: 90%;
+		}
+		.accordion-title.open:after {
+			font-family: FontAwesome;
+			content: "\f068";
+		}				
 /*============== END ACCORDION STYLING ======================*/
 
 /***==========================================================================
@@ -884,7 +882,7 @@ font-size: 0.9em;	}
 	    text-align: left;
 	    max-width: 100%;}
 	   
-   .two_third .last_column {
+   .two_third.last_column {
 	   	width: 100% !important;
 	   	max-width: 100%;}
    
@@ -910,11 +908,11 @@ font-size: 0.9em;	}
 	   	width: 100%;
 	    max-width: 100%;}
    	   	
-	  .one_third .last_column {
+	  .one_third.last_column {
 	   	 width: 100% !important;
 	   	 max-width: 100%;}
    		
-   	.three_fourth .last_column {
+   	.three_fourth.last_column {
    	    width: 100% !important;
    	    max-width: 100%;	 	}
    	    
@@ -937,7 +935,7 @@ font-size: 0.9em;	}
    		font-style:bold;   	}
    	
    	/* news release copy size */
-   		.three_fourth .last_column p{
+   		.three_fourth.last_column p{
    		    font-size: 80%;
    		}
 	
@@ -1077,7 +1075,7 @@ font-size: 0.9em;	}
 	a[href^="tel:"]:before {content: "\260E"; padding-right: 3px;}
 
 /* news release copy size */
-	.three_fourth .last_column p{
+	.three_fourth.last_column p{
 	    font-size: 90%;
 	}
 }
